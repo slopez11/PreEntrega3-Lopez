@@ -1,6 +1,6 @@
 
 header {
-    @extend %flex-center-between;
+    @include displays (flex, center, space-between);
     padding: 10px;
     margin-bottom: 20px;
     background-color: nth($colores,3);
@@ -27,13 +27,12 @@ header {
         }
     }
     nav {
-        display: flex;
-        justify-content: space-between;
+        @include displays (flex, none, space-between);
         padding: 10px;
         width: 400px;
     }
     div {
-        @extend %flex-center-between;
+        @include displays (flex, center, space-between);
         width: 150px;
         .img-perf-usuario {
             border-style: solid;

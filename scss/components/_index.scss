@@ -21,8 +21,7 @@
 
 
 .pag-inicio {
-    display: flex;
-    justify-content:space-around;
+    @include displays (flex, none, space-around);
     .img-izq {
         display: flex;
         flex-direction: column;
@@ -40,9 +39,7 @@
         }
     }
     .planes {
-        display: flex;
-        justify-content:space-around;
-        align-items: center;
+        @include displays (flex, center, space-around);
         gap: 100px;
         .planes1{
             display: flex;

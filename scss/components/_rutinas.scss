@@ -1,5 +1,5 @@
 .contenedor-div {
-   @include display (flex, center, center)
+   @include displays (flex, center, center)
 }
 
 .Contenedor-de-rutinas {
@@ -15,9 +15,7 @@
     width: 40%;
     border: solid 3px black;
     margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include displays (flex, center, center)
 }
 
 h2 {
@@ -30,9 +28,7 @@ h2 {
 }
 
 .contenedor-historial {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center; 
+    @include displays (flex, center, center)
 }
 

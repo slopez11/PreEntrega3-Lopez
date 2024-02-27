@@ -1,7 +1,6 @@
 
 .miperfil {
-    display: flex;
-    align-items: center;
+    @include displays (flex, center, none)
 }
                                             
 .img-miniperfil {
@@ -31,8 +30,7 @@ h1 {
 }
 
 .cuerpo-recorrido {
-    text-align: center;
-    justify-content: center;
+    @include displays (none, center, none)
 }
 
 .esp-filas {

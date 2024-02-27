@@ -1,11 +1,9 @@
 
 div {
     .horarios {
-        display: flex;
+        @include displays (flex, center, center);
         height: 500px;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         .horarios-texto {
             font-size: 25px;
             font-family: Arial, Helvetica, sans-serif;

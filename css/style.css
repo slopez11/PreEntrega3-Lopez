@@ -1,18 +1,547 @@
-/* Error: Undefined mixin.
- *   ,
- * 2 |    @include display (flex, center, center)
- *   |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   scss\components\_rutinas.scss 2:4  @import
- *   scss\style.scss 15:9               root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a   \2577 \a 2 \2502     @include display (flex, center, center)\d\a   \2502     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\components\\_rutinas.scss 2:4  @import\a   scss\\style.scss 15:9               root stylesheet";
+@charset "UTF-8";
+.img-miniperfilhijo, .pag-inicio .img-der .imagen-container img, .pag-inicio .img-izq .imagen-container img, header div .img-perf-usuario img, header section div img, footer nav ul li div img, footer div img {
+  width: 100%;
+  height: 100%;
 }
+
+/* creamos variables para guardar un valor que se reutiliza en varios lugares */
+/* puedo luego importar el archivo donde lo necesito, en la pagina que sea */
+div .ejercicio {
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-rows: 250px 250px 250px;
+  grid-template-areas: "video1 video2 video3 video4" "video5 video6 video7 video8" "video9 video10 video11 video12";
+  justify-content: center;
+  gap: 50px;
+  height: 60vh;
+}
+
+.contenedor-ejercicio1 {
+  grid-area: video1;
+  text-align: center;
+}
+
+.contenedor-ejercicio5 {
+  grid-area: video5;
+  text-align: center;
+}
+
+.contenedor-ejercicio9 {
+  grid-area: video9;
+  text-align: center;
+}
+
+.contenedor-ejercicio2 {
+  grid-area: video2;
+  text-align: center;
+}
+
+.contenedor-ejercicio6 {
+  grid-area: video6;
+  text-align: center;
+}
+
+.contenedor-ejercicio10 {
+  grid-area: video10;
+  text-align: center;
+}
+
+.contenedor-ejercicio3 {
+  grid-area: video3;
+  text-align: center;
+}
+
+.contenedor-ejercicio7 {
+  grid-area: video7;
+  text-align: center;
+}
+
+.contenedor-ejercicio11 {
+  grid-area: video11;
+  text-align: center;
+}
+
+.contenedor-ejercicio4 {
+  grid-area: video4;
+  text-align: center;
+}
+
+.contenedor-ejercicio8 {
+  grid-area: video8;
+  text-align: center;
+}
+
+.contenedor-ejercicio12 {
+  grid-area: video12;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #85c1e9;
+  margin-top: 70px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+footer div {
+  border-style: solid;
+  border-color: #85c1e9;
+  border-radius: 35px;
+  width: 110px;
+  height: 120px;
+  overflow: hidden;
+}
+footer nav ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: none;
+}
+footer nav ul li div {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  border-style: solid;
+  border-color: #85c1e9;
+  overflow: hidden;
+  margin-right: 10px;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #85c1e9;
+  height: 70px;
+}
+header section {
+  display: flex;
+  align-items: center;
+}
+header section p {
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+header section div {
+  border-style: solid;
+  border-color: #85c1e9;
+  border-radius: 20px;
+  width: 80px;
+  height: 50px;
+  overflow: hidden;
+}
+header nav {
+  display: flex;
+  align-items: none;
+  justify-content: space-between;
+  padding: 10px;
+  width: 400px;
+}
+header div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
+}
+header div .img-perf-usuario {
+  border-style: solid;
+  border-color: #85c1e9;
+  border-radius: 30px;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* @media screen and (width < 480px) {
+    .nombregimnasio {
+        display: none;
+    }
+    .logoInicio-padre {
+        display: none;
+    }
+    .logoFinal-padre {
+        display: none;
+    }
+
+    p {
+        font-size: 10px;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .img-perfil {
+        width: 10px;
+        height: 10px;
+        justify-content: right;
+    }
+
+    .ingreso-hijo {
+        display: none;
+    } 
+}
+
+
+@media screen and (width < 480px) {
+    .ejercicio {
+        display: grid;
+        grid-template-columns: 270px;
+        grid-template-rows:  repeat(12, 330px);
+        grid-template-areas: 
+        'video1'
+        'video2'
+        'video3'
+        'video4'
+        'video5'
+        'video6'
+        'video7'
+        'video8'
+        'video9'
+        'video10'
+        'video11'
+        'video12';
+        gap: 50px;
+        height: 250vh;
+    }  
+} */
+div .horarios {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  flex-direction: column;
+}
+div .horarios .horarios-texto {
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.pag-inicio {
+  display: flex;
+  align-items: none;
+  justify-content: space-around;
+}
+.pag-inicio .img-izq {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.pag-inicio .img-izq .imagen-container {
+  min-width: 200px;
+  min-height: 200px;
+  height: 300px;
+  width: 300px;
+}
+.pag-inicio .planes {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 100px;
+}
+.pag-inicio .planes .planes1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.pag-inicio .planes .planes1 .plan-musc button {
+  border: 2px solid gray;
+  border-radius: 15px;
+  text-align: center;
+  height: 100px;
+  width: 200px;
+  font-size: 18px;
+}
+.pag-inicio .planes .planes1 .plan-musc button:hover {
+  background-color: #85c1e9;
+}
+.pag-inicio .planes .planes1 .plan-squash button {
+  border: 2px solid black;
+  border-radius: 15px;
+  text-align: center;
+  height: 100px;
+  width: 200px;
+  font-size: 18px;
+}
+.pag-inicio .planes .planes1 .plan-squash button:hover {
+  background-color: #85c1e9;
+}
+.pag-inicio .planes .planes2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.pag-inicio .planes .planes2 .plan-boxeo button {
+  border: 2px solid rgb(199, 44, 44);
+  border-radius: 15px;
+  text-align: center;
+  height: 100px;
+  width: 200px;
+  font-size: 18px;
+}
+.pag-inicio .planes .planes2 .plan-boxeo button:hover {
+  background-color: #85c1e9;
+}
+.pag-inicio .planes .planes2 .plan-muaythai button {
+  border: 2px solid gold;
+  border-radius: 15px;
+  text-align: center;
+  height: 100px;
+  width: 200px;
+  font-size: 18px;
+}
+.pag-inicio .planes .planes2 .plan-muaythai button:hover {
+  background-color: #85c1e9;
+}
+.pag-inicio .img-der {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.pag-inicio .img-der .imagen-container {
+  min-width: 200px;
+  min-height: 200px;
+  height: 300px;
+  width: 300px;
+}
+.miperfil {
+  display: flex;
+  align-items: center;
+  justify-content: none;
+}
+
+.img-miniperfil {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 30px;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  margin-left: 10px;
+}
+
+h1 {
+  margin-left: 30px;
+  text-decoration: underline;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.encabezado-recorrido {
+  margin-left: 60px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.cuerpo-recorrido {
+  display: none;
+  align-items: center;
+  justify-content: none;
+}
+
+.esp-filas {
+  padding: 10px;
+}
+
+.esp-col {
+  padding: 10px;
+}
+
+input:hover:focus {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.contenedor-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Contenedor-de-rutinas {
+  width: 50%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Rutina {
+  height: 25%;
+  width: 40%;
+  border: solid 3px black;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.historial-de-rutinas {
+  width: 50%;
+  height: 500px;
+}
+
+.contenedor-historial {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1350px) {
+  header section p {
+    display: none;
+  }
+}
+@media (max-width: 1350px) {
+  .pag-inicio .img-izq .imagen-container, .pag-inicio .img-der .imagen-container {
+    display: none;
+  }
+}
+@media (max-width: 432px) {
+  header nav p {
+    font-size: 7px;
+  }
+  header div p {
+    font-size: 7px;
+  }
+  header div .img-perf-usuario {
+    border-style: solid;
+    border-color: #85c1e9;
+    border-radius: 15px;
+    width: 25px;
+    height: 25px;
+    overflow: hidden;
+  }
+  header div .img-perf-usuario img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 432px) {
+  .planes1 .plan-musc button {
+    border: 2px solid black;
+    border-radius: 15px;
+    text-align: center;
+    height: 75px;
+    width: 150px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 1350px) {
+  .pag-inicio .planes .planes1 .plan-musc button {
+    border: 2px solid gray;
+    border-radius: 15px;
+    text-align: center;
+    height: 60px;
+    width: 100px;
+    font-size: 10px;
+  }
+  .pag-inicio .planes .planes1 .plan-squash button {
+    border: 2px solid black;
+    border-radius: 15px;
+    text-align: center;
+    height: 60px;
+    width: 100px;
+    font-size: 10px;
+  }
+  .pag-inicio .planes .planes2 .plan-boxeo button {
+    border: 2px solid rgb(199, 44, 44);
+    border-radius: 15px;
+    text-align: center;
+    height: 60px;
+    width: 100px;
+    font-size: 10px;
+  }
+  .pag-inicio .planes .planes2 .plan-muaythai button {
+    border: 2px solid gold;
+    border-radius: 15px;
+    text-align: center;
+    height: 60px;
+    width: 100px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 432px) {
+  .pag-inicio .planes .planes1 .plan-musc button {
+    border: 2px solid gray;
+    border-radius: 15px;
+    text-align: center;
+    height: 40px;
+    width: 80px;
+    font-size: 7px;
+  }
+  .pag-inicio .planes .planes1 .plan-squash button {
+    border: 2px solid black;
+    border-radius: 15px;
+    text-align: center;
+    height: 40px;
+    width: 80px;
+    font-size: 7px;
+  }
+  .pag-inicio .planes .planes2 .plan-boxeo button {
+    border: 2px solid rgb(199, 44, 44);
+    border-radius: 15px;
+    text-align: center;
+    height: 40px;
+    width: 80px;
+    font-size: 7px;
+  }
+  .pag-inicio .planes .planes2 .plan-muaythai button {
+    border: 2px solid gold;
+    border-radius: 15px;
+    text-align: center;
+    height: 40px;
+    width: 80px;
+    font-size: 7px;
+  }
+}
+@media (max-width: 432px) {
+  footer .pestañas-footer {
+    display: none;
+  }
+  footer div {
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    border-style: solid;
+    border-color: #85c1e9;
+    overflow: hidden;
+    margin-right: 10px;
+  }
+  footer .redes-sociales ul {
+    padding: 0px;
+  }
+  footer .redes-sociales ul li div {
+    display: none;
+  }
+  footer .redes-sociales ul li div img {
+    display: none;
+  }
+  footer .redes-sociales ul li a {
+    font-size: 10px;
+  }
+}
+/* Responsive */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #ECF0F1;
+  margin: 0px;
+}
+
+/*# sourceMappingURL=style.css.map */
