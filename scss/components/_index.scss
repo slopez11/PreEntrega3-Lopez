@@ -1,16 +1,126 @@
 
-section {
-    @extend %flex-center-around;
-    div {
-        height: 300px;
-        width: 320px;
-        text-align: center;
+// section {
+//     @extend %flex-center-around;
+//     div {
+//         height: 300px;
+//         width: 320px;
+//         text-align: center;
 
-        div {
-            height: 250px;
+//         .imagen-container {
+//             height: 250px;
+//             width: 300px;
+//             margin: 10px;
+//             img{
+//                 width: 100%;
+//                 height: 100%;
+//             }
+//         }
+//     }
+// }
+
+
+
+.pag-inicio {
+    display: flex;
+    justify-content:space-around;
+    .img-izq {
+        display: flex;
+        flex-direction: column;
+        gap: 20px; 
+
+
+        .imagen-container {
+            min-width: 200px;
+            min-height: 200px;
+            height: 300px;
             width: 300px;
-            margin: 10px;
-            img{
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .planes {
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        gap: 100px;
+        .planes1{
+            display: flex;
+            flex-direction: column;
+            gap: 20px; 
+            .plan-musc {
+                
+                button {
+                    border: 2px solid black;
+                    border-radius: 15px;
+                    text-align: center;
+                    height: 100px;
+                    width: 200px;
+                    font-size: 18px;
+                }
+                button:hover {
+                    background-color: nth($colores,3);
+                }
+            }
+            .plan-squash {
+                button {
+                    border: 2px solid black;
+                    border-radius: 15px;
+                    text-align: center;
+                    height: 100px;
+                    width: 200px;
+                    font-size: 18px;
+                }
+                button:hover {
+                    background-color: nth($colores,3);
+                }
+            }
+        }
+        .planes2{
+            display: flex;
+            flex-direction: column;
+            gap: 20px; 
+            .plan-boxeo {
+                button {
+                    border: 2px solid black;
+                    border-radius: 15px;
+                    text-align: center;
+                    height: 100px;
+                    width: 200px;
+                    font-size: 18px;
+                }
+            
+                button:hover {
+                    background-color: nth($colores,3);
+                }
+            }
+            .plan-muaythai {
+                button {
+                    border: 2px solid black;
+                    border-radius: 15px;
+                    text-align: center;
+                    height: 100px;
+                    width: 200px;
+                    font-size: 18px;
+                }
+                button:hover {
+                    background-color: nth($colores,3);
+                }
+            }
+        }
+    }
+    .img-der {
+        display: flex;
+        flex-direction: column;
+        gap: 20px; 
+
+        .imagen-container {
+            min-width: 200px;
+            min-height: 200px;
+            height: 300px;
+            width: 300px;
+            img {
                 width: 100%;
                 height: 100%;
             }

@@ -9,12 +9,6 @@ header div, header, footer {
   justify-content: space-between;
 }
 
-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
 .button {
   padding: 10px;
   text-decoration: none;
@@ -183,53 +177,59 @@ a {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Responsive */
-* {
-  font-family: Arial, Helvetica, sans-serif;
+/* @media screen and (width < 480px) {
+    .nombregimnasio {
+        display: none;
+    }
+    .logoInicio-padre {
+        display: none;
+    }
+    .logoFinal-padre {
+        display: none;
+    }
+
+    p {
+        font-size: 10px;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .img-perfil {
+        width: 10px;
+        height: 10px;
+        justify-content: right;
+    }
+
+    .ingreso-hijo {
+        display: none;
+    } 
 }
 
-body {
-  background-color: #ECF0F1;
-  margin: 0px;
-}
 
 @media screen and (width < 480px) {
-  .nombregimnasio {
-    display: none;
-  }
-  .logoInicio-padre {
-    display: none;
-  }
-  .logoFinal-padre {
-    display: none;
-  }
-  p {
-    font-size: 10px;
-  }
-  a {
-    text-decoration: none;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  .img-perfil {
-    width: 10px;
-    height: 10px;
-    justify-content: right;
-  }
-  .ingreso-hijo {
-    display: none;
-  }
-}
-@media screen and (width < 480px) {
-  .ejercicio {
-    display: grid;
-    grid-template-columns: 270px;
-    grid-template-rows: repeat(12, 330px);
-    grid-template-areas: "video1" "video2" "video3" "video4" "video5" "video6" "video7" "video8" "video9" "video10" "video11" "video12";
-    gap: 50px;
-    height: 250vh;
-  }
-}
+    .ejercicio {
+        display: grid;
+        grid-template-columns: 270px;
+        grid-template-rows:  repeat(12, 330px);
+        grid-template-areas: 
+        'video1'
+        'video2'
+        'video3'
+        'video4'
+        'video5'
+        'video6'
+        'video7'
+        'video8'
+        'video9'
+        'video10'
+        'video11'
+        'video12';
+        gap: 50px;
+        height: 250vh;
+    }  
+} */
 div .horarios {
   display: flex;
   height: 500px;
@@ -242,17 +242,97 @@ div .horarios .horarios-texto {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-section div {
+.pag-inicio {
+  display: flex;
+  justify-content: space-around;
+}
+.pag-inicio .img-izq {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.pag-inicio .img-izq .imagen-container {
+  min-width: 200px;
+  min-height: 200px;
   height: 300px;
-  width: 320px;
-  text-align: center;
-}
-section div div {
-  height: 250px;
   width: 300px;
-  margin: 10px;
 }
-section div div img {
+.pag-inicio .img-izq .imagen-container img {
+  width: 100%;
+  height: 100%;
+}
+.pag-inicio .planes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 100px;
+}
+.pag-inicio .planes .planes1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.pag-inicio .planes .planes1 .plan-musc button {
+  border: 2px solid black;
+  border-radius: 15px;
+  text-align: center;
+  height: 100px;
+  width: 200px;
+  font-size: 18px;
+}
+.pag-inicio .planes .planes1 .plan-musc button:hover {
+  background-color: #85c1e9;
+}
+.pag-inicio .planes .planes1 .plan-squash button {
+  border: 2px solid black;
+  border-radius: 15px;
+  text-align: center;
+  height: 100px;
+  width: 200px;
+  font-size: 18px;
+}
+.pag-inicio .planes .planes1 .plan-squash button:hover {
+  background-color: #85c1e9;
+}
+.pag-inicio .planes .planes2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.pag-inicio .planes .planes2 .plan-boxeo button {
+  border: 2px solid black;
+  border-radius: 15px;
+  text-align: center;
+  height: 100px;
+  width: 200px;
+  font-size: 18px;
+}
+.pag-inicio .planes .planes2 .plan-boxeo button:hover {
+  background-color: #85c1e9;
+}
+.pag-inicio .planes .planes2 .plan-muaythai button {
+  border: 2px solid black;
+  border-radius: 15px;
+  text-align: center;
+  height: 100px;
+  width: 200px;
+  font-size: 18px;
+}
+.pag-inicio .planes .planes2 .plan-muaythai button:hover {
+  background-color: #85c1e9;
+}
+.pag-inicio .img-der {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.pag-inicio .img-der .imagen-container {
+  min-width: 200px;
+  min-height: 200px;
+  height: 300px;
+  width: 300px;
+}
+.pag-inicio .img-der .imagen-container img {
   width: 100%;
   height: 100%;
 }
@@ -344,6 +424,16 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+/* Responsive */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #ECF0F1;
+  margin: 0px;
 }
 
 /*# sourceMappingURL=style.css.map */
