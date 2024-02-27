@@ -49,16 +49,18 @@
                 button {
                     @include botones-planes (2px solid map-get($colores,plan-musc),15px,100px,200px,18px)
                 }
-                button:hover {
+                button:hover:focus {
                     background-color: map-get($colores,color3);
+                    cursor: pointer;
                 }
             }
             .plan-squash {
                 button {
                     @include botones-planes (2px solid map-get($colores,color2),15px,100px,200px,18px)
                 }
-                button:hover {
+                button:hover:focus {
                     background-color: map-get($colores,color3);
+                    cursor: pointer;
                 }
             }
         }
@@ -71,16 +73,18 @@
                     @include botones-planes (2px solid map-get($colores,plan-boxeo),15px,100px,200px,18px)
                 }
             
-                button:hover {
+                button:hover:focus {
                     background-color: map-get($colores,color3);
+                    cursor: pointer;
                 }
             }
             .plan-muaythai {
                 button {
                     @include botones-planes (2px solid map-get($colores,plan-muaythai),15px,100px,200px,18px)
                 }
-                button:hover {
+                button:hover:focus {
                     background-color: map-get($colores,color3);
+                    cursor: pointer;
                 }
             }
         }

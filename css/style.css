@@ -262,8 +262,9 @@ div .horarios .horarios-texto {
   width: 200px;
   font-size: 18px;
 }
-.pag-inicio .planes .planes1 .plan-musc button:hover {
+.pag-inicio .planes .planes1 .plan-musc button:hover:focus {
   background-color: #85c1e9;
+  cursor: pointer;
 }
 .pag-inicio .planes .planes1 .plan-squash button {
   border: 2px solid black;
@@ -273,8 +274,9 @@ div .horarios .horarios-texto {
   width: 200px;
   font-size: 18px;
 }
-.pag-inicio .planes .planes1 .plan-squash button:hover {
+.pag-inicio .planes .planes1 .plan-squash button:hover:focus {
   background-color: #85c1e9;
+  cursor: pointer;
 }
 .pag-inicio .planes .planes2 {
   display: flex;
@@ -289,8 +291,9 @@ div .horarios .horarios-texto {
   width: 200px;
   font-size: 18px;
 }
-.pag-inicio .planes .planes2 .plan-boxeo button:hover {
+.pag-inicio .planes .planes2 .plan-boxeo button:hover:focus {
   background-color: #85c1e9;
+  cursor: pointer;
 }
 .pag-inicio .planes .planes2 .plan-muaythai button {
   border: 2px solid gold;
@@ -300,8 +303,9 @@ div .horarios .horarios-texto {
   width: 200px;
   font-size: 18px;
 }
-.pag-inicio .planes .planes2 .plan-muaythai button:hover {
+.pag-inicio .planes .planes2 .plan-muaythai button:hover:focus {
   background-color: #85c1e9;
+  cursor: pointer;
 }
 .pag-inicio .img-der {
   display: flex;
