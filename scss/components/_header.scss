@@ -36,7 +36,7 @@ header {
     div {
         @extend %flex-center-between;
         width: 150px;
-        div {
+        .img-perf-usuario {
             border-style: solid;
             border-color: nth($colores,3);
             border-radius: 30px ;

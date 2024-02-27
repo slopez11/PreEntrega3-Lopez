@@ -1,3 +1,4 @@
+@charset "UTF-8";
 footer nav ul li {
   display: flex;
   align-items: center;
@@ -7,11 +8,6 @@ header div, header, footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.button {
-  padding: 10px;
-  text-decoration: none;
 }
 
 /* creamos variables para guardar un valor que se reutiliza en varios lugares */
@@ -158,7 +154,7 @@ header nav {
 header div {
   width: 150px;
 }
-header div div {
+header div .img-perf-usuario {
   border-style: solid;
   border-color: #85c1e9;
   border-radius: 30px;
@@ -166,7 +162,7 @@ header div div {
   height: 50px;
   overflow: hidden;
 }
-header div div img {
+header div .img-perf-usuario img {
   width: 100%;
   height: 100%;
 }
@@ -426,6 +422,109 @@ h2 {
   align-items: center;
 }
 
+@media (max-width: 1350px) {
+  header section p {
+    display: none;
+  }
+}
+@media (max-width: 1350px) {
+  .pag-inicio .img-izq .imagen-container, .pag-inicio .img-der .imagen-container {
+    display: none;
+  }
+}
+@media (max-width: 432px) {
+  header nav p {
+    font-size: 7px;
+  }
+  header div p {
+    font-size: 7px;
+  }
+  header div .img-perf-usuario {
+    border-style: solid;
+    border-color: #85c1e9;
+    border-radius: 15px;
+    width: 25px;
+    height: 25px;
+    overflow: hidden;
+  }
+  header div .img-perf-usuario img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 432px) {
+  .planes1 .plan-musc button {
+    border: 2px solid black;
+    border-radius: 15px;
+    text-align: center;
+    height: 75px;
+    width: 150px;
+    font-size: 18px;
+  }
+}
+.pag-inicio .planes .planes1 .plan-musc button {
+  border: 2px solid black;
+  border-radius: 15px;
+  text-align: center;
+  height: 40px;
+  width: 80px;
+  font-size: 7px;
+}
+.pag-inicio .planes .planes1 .plan-squash button {
+  border: 2px solid black;
+  border-radius: 15px;
+  text-align: center;
+  height: 40px;
+  width: 80px;
+  font-size: 7px;
+}
+.pag-inicio .planes .planes2 .plan-boxeo button {
+  border: 2px solid black;
+  border-radius: 15px;
+  text-align: center;
+  height: 40px;
+  width: 80px;
+  font-size: 7px;
+}
+.pag-inicio .planes .planes2 .plan-muaythai button {
+  border: 2px solid black;
+  border-radius: 15px;
+  text-align: center;
+  height: 40px;
+  width: 80px;
+  font-size: 7px;
+}
+
+@media (max-width: 432px) {
+  footer .pestañas-footer {
+    display: none;
+  }
+  footer div {
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    border-style: solid;
+    border-color: #85c1e9;
+    overflow: hidden;
+    margin-right: 10px;
+  }
+  footer div img {
+    width: 100%;
+    height: 100%;
+  }
+  footer .redes-sociales ul {
+    padding: 0px;
+  }
+  footer .redes-sociales ul li div {
+    display: none;
+  }
+  footer .redes-sociales ul li div img {
+    display: none;
+  }
+  footer .redes-sociales ul li a {
+    font-size: 10px;
+  }
+}
 /* Responsive */
 * {
   font-family: Arial, Helvetica, sans-serif;
