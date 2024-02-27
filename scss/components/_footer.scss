@@ -12,8 +12,7 @@ footer {
             height:120px;
             overflow: hidden;
             img {
-                width: 100%;
-                height: 100%;
+                @extend %img-full;
             }
         }
         nav {
@@ -30,8 +29,7 @@ footer {
                         overflow: hidden;
                         margin-right: 10px;
                         img {
-                            width: 100%;
-                            height: 100%;
+                            @extend %img-full;
                         }
                     }
                 }

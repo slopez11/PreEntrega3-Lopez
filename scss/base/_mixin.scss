@@ -6,3 +6,10 @@
     width: $width;
     font-size: $f-s;
 }
+
+@mixin displays ($display, $align, $justify) {
+    display: $display;
+    align-items: $align;
+    justify-content: $justify;
+}
+    

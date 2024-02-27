@@ -1,7 +1,5 @@
 .contenedor-div {
-    display: flex;
-    text-align: center;
-    justify-content: center;
+   @include display (flex, center, center)
 }
 
 .Contenedor-de-rutinas {
