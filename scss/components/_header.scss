@@ -3,20 +3,20 @@ header {
     @include displays (flex, center, space-between);
     padding: 10px;
     margin-bottom: 20px;
-    background-color: nth($colores,3);
+    background-color: map-get($colores,color3);
     height: 70px;
     section  {
         display: flex;
         align-items: center;
         p {
             font-size: 40px;
-            color: nth($colores,2);
+            color: map-get($colores,color2);
             font-weight: bold;
             font-family:'Times New Roman', Times, serif;
         }
         div {
             border-style: solid;
-            border-color: nth($colores,3);
+            border-color: map-get($colores,color3);
             border-radius: 20px;
             width: 80px;
             height: 50px;
@@ -36,7 +36,7 @@ header {
         width: 150px;
         .img-perf-usuario {
             border-style: solid;
-            border-color: nth($colores,3);
+            border-color: map-get($colores,color3);
             border-radius: 30px ;
             width: 50px;
             height: 50px;

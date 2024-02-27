@@ -29,7 +29,7 @@
         }
         .img-perf-usuario {
             border-style: solid;
-            border-color: nth($colores,3);
+            border-color: map-get($colores,color3);
             border-radius: 15px ;
             width: 25px;
             height: 25px;
@@ -46,7 +46,7 @@
     .planes1{
         .plan-musc {
             button {
-                border: 2px solid black;
+                border: 2px solid map-get($colores,color2);
                 border-radius: 15px;
                 text-align: center;
                 height: 75px;
@@ -64,24 +64,24 @@
             .planes1{
                 .plan-musc {
                     button {
-                        @include botones-planes (2px solid gray,15px,60px,100px,10px)
+                        @include botones-planes (2px solid map-get($colores,plan-musc),15px,60px,100px,10px)
                     }
                 }
                 .plan-squash {
                     button {
-                        @include botones-planes (2px solid black,15px,60px,100px,10px)
+                        @include botones-planes (2px solid map-get($colores,color2),15px,60px,100px,10px)
                     }
                 }
             }
             .planes2{
                 .plan-boxeo {
                     button {
-                        @include botones-planes (2px solid rgb(199, 44, 44),15px,60px,100px,10px)
+                        @include botones-planes (2px solid map-get($colores,plan-boxeo),15px,60px,100px,10px)
                     }
                 }
                 .plan-muaythai {
                     button {
-                        @include botones-planes (2px solid gold,15px,60px,100px,10px)
+                        @include botones-planes (2px solid map-get($colores,plan-muaythai),15px,60px,100px,10px)
                     }
                 }
             }
@@ -95,24 +95,24 @@
             .planes1{
                 .plan-musc {
                     button {
-                        @include botones-planes (2px solid gray,15px,40px,80px,7px)
+                        @include botones-planes (2px solid map-get($colores,plan-musc),15px,40px,80px,7px)
                     }
                 }
                 .plan-squash {
                     button {
-                        @include botones-planes (2px solid black,15px,40px,80px,7px)
+                        @include botones-planes (2px solid map-get($colores,color2),15px,40px,80px,7px)
                     }
                 }
             }
             .planes2{
                 .plan-boxeo {
                     button {
-                        @include botones-planes (2px solid rgb(199, 44, 44),15px,40px,80px,7px)
+                        @include botones-planes (2px solid map-get($colores,plan-boxeo),15px,40px,80px,7px)
                     }
                 }
                 .plan-muaythai {
                     button {
-                        @include botones-planes (2px solid gold,15px,40px,80px,7px)
+                        @include botones-planes (2px solid map-get($colores,plan-muaythai),15px,40px,80px,7px)
                     }
                 }
             }
