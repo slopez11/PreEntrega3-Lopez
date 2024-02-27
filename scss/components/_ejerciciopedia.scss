@@ -1,0 +1,76 @@
+
+div {
+    .ejercicio {
+        display: grid;
+        grid-template-columns: 300px 300px 300px 300px;
+        grid-template-rows:  250px 250px 250px;
+        grid-template-areas: 
+        'video1 video2 video3 video4'
+        'video5 video6 video7 video8'
+        'video9 video10 video11 video12';
+        justify-content: center;
+        gap: 50px;
+        height: 60vh;
+    }
+}
+
+.contenedor-ejercicio1 {
+    grid-area:  video1;
+    text-align: center;
+}
+
+.contenedor-ejercicio5 {
+    grid-area: video5;
+    text-align: center;
+}
+
+.contenedor-ejercicio9 {
+    grid-area: video9;
+    text-align: center;
+}
+
+.contenedor-ejercicio2 {
+    grid-area: video2;
+    text-align: center;
+}
+
+.contenedor-ejercicio6 {
+    grid-area: video6;
+    text-align: center;
+}
+
+.contenedor-ejercicio10 {
+    grid-area: video10;
+    text-align: center;
+}
+
+.contenedor-ejercicio3 {
+    grid-area: video3;
+    text-align: center;
+}
+
+.contenedor-ejercicio7 {
+    grid-area: video7;
+    text-align: center;
+}
+
+.contenedor-ejercicio11 {
+    grid-area: video11;
+    text-align: center;
+}
+
+.contenedor-ejercicio4 {
+    grid-area: video4;
+    text-align: center;
+}
+
+.contenedor-ejercicio8 {
+    grid-area: video8;
+    text-align: center;
+}
+
+.contenedor-ejercicio12 {
+    grid-area: video12;
+    text-align: center;
+}
+

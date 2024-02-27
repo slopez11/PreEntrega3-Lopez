@@ -1,0 +1,542 @@
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Diseño body */
+
+body {
+    background-color: #ECF0F1;
+    margin: 0px;
+}
+
+/*Diseño header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #85c1e9;
+    height: 70px;
+}
+
+
+/* Diseño de titulo */
+
+    .seccion-titulo {
+        display: flex;
+        align-items: center;
+    }
+    
+    .nombregimnasio {
+        font-size: 40px;
+        color: white;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+/* Diseño de logo */
+
+        .logoInicio-padre {
+            border-style: solid;
+            border-color: #85c1e9;
+            border-radius: 20px;
+            width: 80px;
+            height: 50px;
+            overflow: hidden;
+            }
+
+        .logoInicio {
+            width: 100%;
+            height: 100%;
+        }
+
+
+/* Diseño de navegacion */
+
+    .nav-titulo {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        width: 400px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+/* Diseño Ingreso */
+   
+    .ingreso {
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        width: 150px;
+    }
+
+    .img-perfil {
+        border-style: solid;
+        border-color: #85c1e9;
+        border-radius: 30px ;
+        width: 50px;
+        height: 50px;
+        overflow: hidden;
+    }
+
+    .img-perfilhijo {
+        width: 100%;
+        height: 100%;
+    }
+
+/* Diseño footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: #85c1e9;
+    margin-top: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Diseño de logo */
+
+    .logoFinal-padre {
+        border-style: solid;
+        border-color: #85c1e9;
+        border-radius: 35px;
+        width: 110px;
+        height:120px;
+        overflow: hidden;
+        }
+
+    .logoFinal {
+        width: 100%;
+        height: 100%;
+    }
+
+/* Diseño de lista */
+
+li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+
+.img-redes-sociales {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    border-style: solid;
+    border-color: #85c1e9;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.img-redes-sociales-hijo {
+    width: 100%;
+    height: 100%;
+}
+
+/* responsive para header */
+@media screen and (width < 480px) {
+    .nombregimnasio {
+        display: none;
+    }
+    .logoInicio-padre {
+        display: none;
+    }
+    .logoFinal-padre {
+        display: none;
+    }
+
+    p {
+        font-size: 10px;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .img-perfil {
+        width: 10px;
+        height: 10px;
+        justify-content: right;
+    }
+    
+    .ingreso-hijo {
+        display: none;
+    } 
+}
+
+
+/* Diseño footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: #85c1e9;
+    margin-top: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Diseño de logo */
+
+    .logoFinal-padre {
+        border-style: solid;
+        border-color: #85c1e9;
+        border-radius: 35px;
+        width: 110px;
+        height:120px;
+        overflow: hidden;
+        }
+
+    .logoFinal {
+        width: 100%;
+        height: 100%;
+    }
+
+/* Diseño de lista */
+
+li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+
+.img-redes-sociales {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    border-style: solid;
+    border-color: #85c1e9;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.img-redes-sociales-hijo {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+                                                /* DISEÑO PAGINA PRINCIPAL */
+
+
+/* Diseño cuerpo principal */
+
+.cuerpo-principal1 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.cuerpo-principal2 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+/* Diseño musculacion */
+.musculacion-abuelo {
+    height: 300px;
+    width: 320px;
+    text-align: center;
+}
+
+
+.musculacion-padre {
+    height: 250px;
+    width: 300px;
+    margin: 10px;
+}
+
+.musculacion-hijo {
+    width: 100%;
+    height: 100%;
+}
+
+/* Diseño boxeo */
+.boxeo-abuelo {
+    height: 300px;
+    width: 320px;
+    text-align: center;
+}
+
+
+.boxeo-padre {
+    height: 250px;
+    width: 300px;
+    margin: 10px;
+}
+
+.boxeo-hijo {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Diseño squash */
+.squash-abuelo {
+    height: 300px;
+    width: 320px;
+    text-align: center;
+}
+
+
+.squash-padre {
+    height: 250px;
+    width: 300px;
+    margin: 10px;
+}
+
+.squash-hijo {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Diseño artes marciales */
+.artesmarciales-abuelo {
+    height: 300px;
+    width: 320px;
+    text-align: center;
+}
+
+
+.artesmarciales-padre {
+    height: 250px;
+    width: 300px;
+    margin: 10px;
+}
+
+.artesmarciales-hijo {
+    width: 100%;
+    height: 100%;
+}
+
+
+                                                /* DISEÑO PAGINA PERFIL */
+
+
+
+.miperfil {
+    display: flex;
+    align-items: center;
+}
+                                            
+.img-miniperfil {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    margin-left: 10px;
+}
+                                            
+.img-miniperfilhijo {
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    margin-left: 30px;
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+
+.encabezado-recorrido {
+    margin-left: 60px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.cuerpo-recorrido {
+    text-align: center;
+    justify-content: center;
+}
+
+.esp-filas {
+    padding: 10px;
+}
+
+.esp-col {
+    padding: 10px;
+}
+
+input:hover:focus {
+    cursor: pointer;
+    font-size: 20px;
+
+}
+
+
+
+
+                                                /* DISEÑO PAGINA EJERCICIOPEDIA */
+ 
+
+.ejercicio {
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows:  250px 250px 250px;
+    grid-template-areas: 
+    'video1 video2 video3 video4'
+    'video5 video6 video7 video8'
+    'video9 video10 video11 video12';
+    justify-content: center;
+    gap: 50px;
+    height: 60vh;
+}  
+
+.contenedor-ejercicio1 {
+    grid-area:  video1;
+    text-align: center;
+}
+
+.contenedor-ejercicio5 {
+    grid-area: video5;
+    text-align: center;
+}
+
+.contenedor-ejercicio9 {
+    grid-area: video9;
+
+    text-align: center;}
+
+.contenedor-ejercicio2 {
+    grid-area: video2;
+    text-align: center;}
+
+.contenedor-ejercicio6 {
+    grid-area: video6;
+    text-align: center;}
+
+.contenedor-ejercicio10 {
+    grid-area: video10;
+    text-align: center;
+}
+
+.contenedor-ejercicio3 {
+    grid-area: video3;
+    text-align: center;}
+
+.contenedor-ejercicio7 {
+    grid-area: video7;
+    text-align: center;}
+
+.contenedor-ejercicio11 {
+    grid-area: video11;
+    text-align: center;
+}
+
+.contenedor-ejercicio4 {
+    grid-area: video4;
+    text-align: center;}
+
+.contenedor-ejercicio8 {
+    grid-area: video8;
+    text-align: center;}
+
+.contenedor-ejercicio12 {
+    grid-area: video12;
+    text-align: center;
+}
+
+@media screen and (width < 480px) {
+    .ejercicio {
+        display: grid;
+        grid-template-columns: 270px;
+        grid-template-rows:  repeat(12, 330px);
+        grid-template-areas: 
+        'video1'
+        'video2'
+        'video3'
+        'video4'
+        'video5'
+        'video6'
+        'video7'
+        'video8'
+        'video9'
+        'video10'
+        'video11'
+        'video12';
+        gap: 50px;
+        height: 250vh;
+    }  
+}
+
+
+
+    
+                                                /* DISEÑO PAGINA RUTINAS */
+
+
+                                                
+.contenedor-div {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.Contenedor-de-rutinas {
+    width: 50%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Rutina {
+    height: 25%;
+    width: 40%;
+    border: solid 3px black;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.historial-de-rutinas {
+    width: 50%;
+    height: 500px;
+}
+
+.contenedor-historial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+       
+                                             /* DISEÑO PAGINA HORARIOS */
+
+.Horarios {
+    display: flex;
+    height: 500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Horarios-texto {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+

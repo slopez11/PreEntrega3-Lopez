@@ -1,17 +1,349 @@
-/* Error: expected "{".
- *   ,
- * 1 | aaaa
- *   |     ^
- *   '
- *   scss\style.scss 1:5  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a   \2577 \a 1 \2502  aaaa\a   \2502      ^\a   \2575 \a   scss\\style.scss 1:5  root stylesheet';
+footer nav ul li {
+  display: flex;
+  align-items: center;
 }
+
+header div, header, footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.button {
+  padding: 10px;
+  text-decoration: none;
+}
+
+/* creamos variables para guardar un valor que se reutiliza en varios lugares */
+/* puedo luego importar el archivo donde lo necesito, en la pagina que sea */
+div .ejercicio {
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-rows: 250px 250px 250px;
+  grid-template-areas: "video1 video2 video3 video4" "video5 video6 video7 video8" "video9 video10 video11 video12";
+  justify-content: center;
+  gap: 50px;
+  height: 60vh;
+}
+
+.contenedor-ejercicio1 {
+  grid-area: video1;
+  text-align: center;
+}
+
+.contenedor-ejercicio5 {
+  grid-area: video5;
+  text-align: center;
+}
+
+.contenedor-ejercicio9 {
+  grid-area: video9;
+  text-align: center;
+}
+
+.contenedor-ejercicio2 {
+  grid-area: video2;
+  text-align: center;
+}
+
+.contenedor-ejercicio6 {
+  grid-area: video6;
+  text-align: center;
+}
+
+.contenedor-ejercicio10 {
+  grid-area: video10;
+  text-align: center;
+}
+
+.contenedor-ejercicio3 {
+  grid-area: video3;
+  text-align: center;
+}
+
+.contenedor-ejercicio7 {
+  grid-area: video7;
+  text-align: center;
+}
+
+.contenedor-ejercicio11 {
+  grid-area: video11;
+  text-align: center;
+}
+
+.contenedor-ejercicio4 {
+  grid-area: video4;
+  text-align: center;
+}
+
+.contenedor-ejercicio8 {
+  grid-area: video8;
+  text-align: center;
+}
+
+.contenedor-ejercicio12 {
+  grid-area: video12;
+  text-align: center;
+}
+
+footer {
+  background-color: #85c1e9;
+  margin-top: 70px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+footer div {
+  border-style: solid;
+  border-color: #85c1e9;
+  border-radius: 35px;
+  width: 110px;
+  height: 120px;
+  overflow: hidden;
+}
+footer div img {
+  width: 100%;
+  height: 100%;
+}
+footer nav ul li {
+  list-style: none;
+}
+footer nav ul li div {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  border-style: solid;
+  border-color: #85c1e9;
+  overflow: hidden;
+  margin-right: 10px;
+}
+footer nav ul li div img {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #85c1e9;
+  height: 70px;
+}
+header section {
+  display: flex;
+  align-items: center;
+}
+header section p {
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+header section div {
+  border-style: solid;
+  border-color: #85c1e9;
+  border-radius: 20px;
+  width: 80px;
+  height: 50px;
+  overflow: hidden;
+}
+header section div img {
+  width: 100%;
+  height: 100%;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  width: 400px;
+}
+header div {
+  width: 150px;
+}
+header div div {
+  border-style: solid;
+  border-color: #85c1e9;
+  border-radius: 30px;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+}
+header div div img {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Responsive */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #ECF0F1;
+  margin: 0px;
+}
+
+@media screen and (width < 480px) {
+  .nombregimnasio {
+    display: none;
+  }
+  .logoInicio-padre {
+    display: none;
+  }
+  .logoFinal-padre {
+    display: none;
+  }
+  p {
+    font-size: 10px;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .img-perfil {
+    width: 10px;
+    height: 10px;
+    justify-content: right;
+  }
+  .ingreso-hijo {
+    display: none;
+  }
+}
+@media screen and (width < 480px) {
+  .ejercicio {
+    display: grid;
+    grid-template-columns: 270px;
+    grid-template-rows: repeat(12, 330px);
+    grid-template-areas: "video1" "video2" "video3" "video4" "video5" "video6" "video7" "video8" "video9" "video10" "video11" "video12";
+    gap: 50px;
+    height: 250vh;
+  }
+}
+div .horarios {
+  display: flex;
+  height: 500px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+div .horarios .horarios-texto {
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section div {
+  height: 300px;
+  width: 320px;
+  text-align: center;
+}
+section div div {
+  height: 250px;
+  width: 300px;
+  margin: 10px;
+}
+section div div img {
+  width: 100%;
+  height: 100%;
+}
+
+.miperfil {
+  display: flex;
+  align-items: center;
+}
+
+.img-miniperfil {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 30px;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  margin-left: 10px;
+}
+
+.img-miniperfilhijo {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  margin-left: 30px;
+  text-decoration: underline;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.encabezado-recorrido {
+  margin-left: 60px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.cuerpo-recorrido {
+  text-align: center;
+  justify-content: center;
+}
+
+.esp-filas {
+  padding: 10px;
+}
+
+.esp-col {
+  padding: 10px;
+}
+
+input:hover:focus {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.contenedor-div {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.Contenedor-de-rutinas {
+  width: 50%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Rutina {
+  height: 25%;
+  width: 40%;
+  border: solid 3px black;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.historial-de-rutinas {
+  width: 50%;
+  height: 500px;
+}
+
+.contenedor-historial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */

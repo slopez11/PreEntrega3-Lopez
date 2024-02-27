@@ -1,1 +1,15 @@
-aaaa
+@import "base/extends";
+@import "base/listas";
+@import "base/magic";
+@import "base/maps";
+@import "base/mixin";
+@import "base/variables";
+
+
+@import "components/ejerciciopedia";
+@import "components/footer";
+@import "components/header";
+@import "components/horarios";
+@import "components/index";
+@import "components/miperfil";
+@import "components/rutinas";
