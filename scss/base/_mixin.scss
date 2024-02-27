@@ -1,0 +1,8 @@
+@mixin botones-planes ($border,$bd-rad,$height,$width,$f-s) {
+    border: $border;
+    border-radius: $bd-rad;
+    text-align: center;
+    height: $height;
+    width: $width;
+    font-size: $f-s;
+}
