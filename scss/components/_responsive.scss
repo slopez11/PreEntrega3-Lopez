@@ -1,10 +1,9 @@
+/* Responsive de header */
+
 @media (max-width: 1350px) {
     header section p {
         display: none;
-    }
-    
-    
-    
+    }   
   }
 
 
@@ -42,6 +41,7 @@
     }
 }
 
+/* Responsive de index */
 @media (max-width: 432px) {
     .planes1{
         .plan-musc {
@@ -120,7 +120,7 @@
     }
 } 
 
-
+/* Responsive de footer*/
 @media (max-width: 432px) {
     footer {
      .pestañas-footer {
@@ -159,6 +159,7 @@
     }
 }
 
+/* Responsive de ejerciciopedia */
 @media (max-width: 1400px) {
     div {
         .ejercicio {
@@ -178,6 +179,7 @@
         }
     }
 }
+
 @media (max-width: 800px) {
     div {
         .ejercicio {
@@ -206,7 +208,7 @@
     }
 }
 
-
+/* Responsive de horarios */
 @media (max-width: 1350px) {
     div{
         .horarios{

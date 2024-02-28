@@ -123,7 +123,7 @@ header section {
 }
 header section p {
   font-size: 40px;
-  color: white;
+  color: black;
   font-weight: bold;
   font-family: "Times New Roman", Times, serif;
 }
@@ -403,6 +403,7 @@ h2 {
   justify-content: center;
 }
 
+/* Responsive de header */
 @media (max-width: 1350px) {
   header section p {
     display: none;
@@ -433,6 +434,7 @@ h2 {
     height: 100%;
   }
 }
+/* Responsive de index */
 @media (max-width: 432px) {
   .planes1 .plan-musc button {
     border: 2px solid black;
@@ -511,6 +513,7 @@ h2 {
     font-size: 7px;
   }
 }
+/* Responsive de footer*/
 @media (max-width: 432px) {
   footer .pestañas-footer {
     display: none;
@@ -537,6 +540,7 @@ h2 {
     font-size: 10px;
   }
 }
+/* Responsive de ejerciciopedia */
 @media (max-width: 1400px) {
   div .ejercicio {
     display: grid;
@@ -559,6 +563,7 @@ h2 {
     height: 140vh;
   }
 }
+/* Responsive de horarios */
 @media (max-width: 1350px) {
   div .horarios div img {
     display: none;
