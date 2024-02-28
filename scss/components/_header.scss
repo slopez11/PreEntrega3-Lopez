@@ -42,7 +42,7 @@ header {
             width: 50px;
             height: 50px;
             overflow: hidden;
-            img {
+            .img-perfilhijo {
                 @extend %img-full;
             }
         }

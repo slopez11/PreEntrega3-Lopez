@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.img-miniperfilhijo, .pag-inicio .img-der .imagen-container img, .pag-inicio .img-izq .imagen-container img, header div .img-perf-usuario img, header section div img, footer nav ul li div img, footer div img {
+.img-miniperfilhijo, .pag-inicio .img-der .imagen-container img, .pag-inicio .img-izq .imagen-container img, header div .img-perf-usuario .img-perfilhijo, header section div img, footer nav ul li div img, footer div img {
   width: 100%;
   height: 100%;
 }
