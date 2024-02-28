@@ -205,3 +205,51 @@
         }
     }
 }
+
+
+@media (max-width: 1350px) {
+    div{
+        .horarios{
+                div {
+                    img {
+                        display: none;
+                    }
+                    .tablets-y-menos {
+                        font-size: 15px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        display: flex;
+                        text-align: center;
+                        justify-content: center;
+                        
+                    }
+                }
+                
+
+            .horarios-texto {
+                font-size: 15px;
+                font-family: Arial, Helvetica, sans-serif;
+                }
+            }
+        }
+    }
+    @media screen and (min: 1350px) {
+        div{
+            .horarios{
+                    div {
+                        .tablets-y-menos {
+                            display: none;
+                            
+                        }
+                    }
+                    
+    
+                .horarios-texto {
+                    font-size: 15px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    }
+                }
+            }
+        }
+  
+ 
+    
