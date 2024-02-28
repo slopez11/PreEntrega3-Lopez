@@ -234,7 +234,7 @@
             }
         }
     }
-    @media screen and (min: 1350px) {
+    @media screen and (min-width: 1350px) {
         div{
             .horarios{
                     div {
@@ -254,4 +254,12 @@
         }
   
  
-    
+@media (max-width: 900px) {
+    .rutinas {
+        .contenedor-div{
+            display: flex;
+            flex-direction: column;
+        }
+     }
+}  
+ 

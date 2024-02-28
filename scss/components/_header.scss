@@ -8,11 +8,12 @@ header {
     section  {
         display: flex;
         align-items: center;
-        p {
+        p , .nombregimnasio {
             font-size: 40px;
             color: map-get($colores,color2);
             font-weight: bold;
             font-family:'Times New Roman', Times, serif;
+
         }
         div {
             border-style: solid;
