@@ -4,11 +4,6 @@
   height: 100%;
 }
 
-.pag-inicio .planes .planes2 .plan-muaythai button, .pag-inicio .planes .planes2 .plan-boxeo button, .pag-inicio .planes .planes1 .plan-squash button, .pag-inicio .planes .planes1 .plan-musc button {
-  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
-  animation: heartbeat 1.5s ease-in-out infinite both;
-}
-
 /* creamos variables para guardar un valor que se reutiliza en varios lugares */
 /* puedo luego importar el archivo donde lo necesito, en la pagina que sea */
 div .ejercicio {
@@ -266,6 +261,8 @@ div .horarios .horarios-texto {
   height: 100px;
   width: 200px;
   font-size: 18px;
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
 }
 .pag-inicio .planes .planes1 .plan-musc button:hover {
   background-color: #85c1e9;
@@ -278,6 +275,8 @@ div .horarios .horarios-texto {
   height: 100px;
   width: 200px;
   font-size: 18px;
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
 }
 .pag-inicio .planes .planes1 .plan-squash button:hover {
   background-color: #85c1e9;
@@ -295,6 +294,8 @@ div .horarios .horarios-texto {
   height: 100px;
   width: 200px;
   font-size: 18px;
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
 }
 .pag-inicio .planes .planes2 .plan-boxeo button:hover {
   background-color: #85c1e9;
@@ -307,6 +308,8 @@ div .horarios .horarios-texto {
   height: 100px;
   width: 200px;
   font-size: 18px;
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
 }
 .pag-inicio .planes .planes2 .plan-muaythai button:hover {
   background-color: #85c1e9;
@@ -461,6 +464,8 @@ h2 {
     height: 60px;
     width: 100px;
     font-size: 10px;
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+    animation: heartbeat 1.5s ease-in-out infinite both;
   }
   .pag-inicio .planes .planes1 .plan-squash button {
     border: 2px solid black;
@@ -469,6 +474,8 @@ h2 {
     height: 60px;
     width: 100px;
     font-size: 10px;
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+    animation: heartbeat 1.5s ease-in-out infinite both;
   }
   .pag-inicio .planes .planes2 .plan-boxeo button {
     border: 2px solid rgb(199, 44, 44);
@@ -477,6 +484,8 @@ h2 {
     height: 60px;
     width: 100px;
     font-size: 10px;
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+    animation: heartbeat 1.5s ease-in-out infinite both;
   }
   .pag-inicio .planes .planes2 .plan-muaythai button {
     border: 2px solid gold;
@@ -485,9 +494,16 @@ h2 {
     height: 60px;
     width: 100px;
     font-size: 10px;
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+    animation: heartbeat 1.5s ease-in-out infinite both;
   }
 }
 @media (max-width: 432px) {
+  .pag-inicio .planes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
   .pag-inicio .planes .planes1 .plan-musc button {
     border: 2px solid gray;
     border-radius: 15px;
@@ -495,6 +511,8 @@ h2 {
     height: 40px;
     width: 80px;
     font-size: 7px;
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+    animation: heartbeat 1.5s ease-in-out infinite both;
   }
   .pag-inicio .planes .planes1 .plan-squash button {
     border: 2px solid black;
@@ -503,6 +521,8 @@ h2 {
     height: 40px;
     width: 80px;
     font-size: 7px;
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+    animation: heartbeat 1.5s ease-in-out infinite both;
   }
   .pag-inicio .planes .planes2 .plan-boxeo button {
     border: 2px solid rgb(199, 44, 44);
@@ -511,6 +531,8 @@ h2 {
     height: 40px;
     width: 80px;
     font-size: 7px;
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+    animation: heartbeat 1.5s ease-in-out infinite both;
   }
   .pag-inicio .planes .planes2 .plan-muaythai button {
     border: 2px solid gold;
@@ -519,6 +541,8 @@ h2 {
     height: 40px;
     width: 80px;
     font-size: 7px;
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+    animation: heartbeat 1.5s ease-in-out infinite both;
   }
 }
 /* Responsive de footer*/
@@ -597,6 +621,7 @@ h2 {
     font-family: Arial, Helvetica, sans-serif;
   }
 }
+/* Responsive de rutinas */
 @media (max-width: 900px) {
   .rutinas .contenedor-div {
     display: flex;

@@ -48,7 +48,7 @@
             .plan-musc {
                 button {
                     @include botones-planes (2px solid map-get($colores,plan-musc),15px,100px,200px,18px);
-                    @extend %heartbeat;
+                    
                 }
                 button:hover {
                     background-color: map-get($colores,color3);
@@ -58,7 +58,7 @@
             .plan-squash {
                 button {
                     @include botones-planes (2px solid map-get($colores,color2),15px,100px,200px,18px);
-                    @extend %heartbeat;
+                    
                 }
                 button:hover {
                     background-color: map-get($colores,color3);
@@ -73,7 +73,7 @@
             .plan-boxeo {
                 button {
                     @include botones-planes (2px solid map-get($colores,plan-boxeo),15px,100px,200px,18px);
-                    @extend %heartbeat;
+                    
                 }
             
                 button:hover {
@@ -84,7 +84,7 @@
             .plan-muaythai {
                 button {
                     @include botones-planes (2px solid map-get($colores,plan-muaythai),15px,100px,200px,18px);
-                    @extend %heartbeat;
+                    
                 }
                 button:hover {
                     background-color: map-get($colores,color3);
