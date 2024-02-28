@@ -346,9 +346,8 @@ h1 {
 }
 
 .cuerpo-recorrido {
-  display: none;
   align-items: center;
-  justify-content: none;
+  text-align: center;
 }
 
 .esp-filas {
@@ -536,6 +535,28 @@ h2 {
   }
   footer .redes-sociales ul li a {
     font-size: 10px;
+  }
+}
+@media (max-width: 1400px) {
+  div .ejercicio {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 250px 250px 250px 250px 250px 250px;
+    grid-template-areas: "video1 video2" "video5 video6" "video9 video10" "video3 video4" "video7 video8" "video11 video12";
+    justify-content: center;
+    gap: 130px;
+    height: 70vh;
+  }
+}
+@media (max-width: 800px) {
+  div .ejercicio {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 250px 250px 250px 250px 250px 250px 250px 250px 250px 250px 250px 250px;
+    grid-template-areas: "video1" "video2" "video3" "video4" "video5" "video6" "video7" "video8" "video9" "video10" "video11" "video12";
+    justify-content: center;
+    gap: 150px;
+    height: 140vh;
   }
 }
 /* Responsive */

@@ -30,7 +30,8 @@ h1 {
 }
 
 .cuerpo-recorrido {
-    @include displays (none, center, none)
+    align-items: center;
+    text-align: center;
 }
 
 .esp-filas {
@@ -44,6 +45,5 @@ h1 {
 input:hover:focus {
     cursor: pointer;
     font-size: 20px;
-
 }
 
