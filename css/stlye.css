@@ -1,5 +1,4 @@
-@charset "UTF-8";
-.img-perfilhijo, .pag-inicio .img-der .imagen-container img, .pag-inicio .img-izq .imagen-container img, header div .img-perf-usuario .img-perfilhijo, header section div img, footer .redes-sociales ul li div img, footer div img {
+.img-perfilhijo, .pag-inicio .img-der .imagen-container img, .pag-inicio .img-izq .imagen-container img, header div .img-perf-usuario .img-perfilhijo, header section div img, .footer-procenter .nav-redes .ul-redes .li-redes .div-redes .img-redes, .footer-procenter .logo-final-padre .logo-final-hijo {
   width: 100%;
   height: 100%;
 }
@@ -76,7 +75,7 @@ div .ejercicio {
   text-align: center;
 }
 
-footer {
+.footer-procenter {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -85,7 +84,7 @@ footer {
   padding-left: 10px;
   padding-right: 10px;
 }
-footer div {
+.footer-procenter .logo-final-padre {
   border-style: solid;
   border-color: #85c1e9;
   border-radius: 35px;
@@ -93,21 +92,25 @@ footer div {
   height: 120px;
   overflow: hidden;
 }
-footer .redes-sociales ul li {
+.footer-procenter .nav-redes .ul-redes .li-redes {
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: none;
 }
-footer .redes-sociales ul li div {
-  width: 40px;
-  height: 40px;
+.footer-procenter .nav-redes .ul-redes .li-redes .div-redes {
+  width: 30px;
+  height: 30px;
   border-radius: 40px;
   border-style: solid;
   border-color: #85c1e9;
   overflow: hidden;
   margin-right: 10px;
 }
+.footer-procenter .nav-pestanas .ul-pestanas .li-pestanas {
+  list-style: none;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -531,39 +534,29 @@ h2 {
     animation: heartbeat 1.5s ease-in-out infinite both;
   }
 }
-/* Responsive de footer*/
-@media (max-width: 510px) {
-  footer div img {
-    display: none;
+/* footer */
+@media (max-width: 1350px) {
+  .footer-procenter .logo-final-padre {
+    width: 100px;
+    height: 100px;
   }
-  footer .redes-sociales ul li div {
-    width: 20px;
-    height: 20px;
-    border-radius: 20px;
-  }
-  footer .redes-sociales ul li a {
-    font-size: 15px;
+  .footer-procenter .nav-redes .ul-redes .li-redes .div-redes {
+    width: 30px;
+    height: 30px;
+    border-radius: 40px;
   }
 }
-@media (max-width: 1350px) {
-  footer .pestañas-footer {
+@media (max-width: 750px) {
+  .footer-procenter {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-procenter .logo-final-padre {
     display: none;
   }
-  footer div {
-    border-radius: 20px;
-    width: 80px;
-    height: 50px;
-    border-style: solid;
-    border-color: #85c1e9;
-    overflow: hidden;
-  }
-  footer .redes-sociales ul li div {
-    width: 20px;
-    height: 20px;
-    border-radius: 20px;
-  }
-  footer .redes-sociales ul li a {
-    font-size: 15px;
+  .footer-procenter .nav-redes .ul-redes .li-redes .div-redes {
+    width: 30px;
+    height: 30px;
   }
 }
 /* Responsive de ejerciciopedia */

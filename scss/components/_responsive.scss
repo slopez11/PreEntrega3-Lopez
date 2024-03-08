@@ -105,7 +105,6 @@
             flex-direction: column;
             gap: 20px;
             .planes1{
-                
                 .plan-musc {
                     button {
                         @include botones-planes (2px solid map-get($colores,plan-musc),15px,40px,80px,7px)
@@ -133,24 +132,27 @@
     }
 } 
 
-/* Responsive de footer*/
-@media (max-width: 510px) {
-    footer {
-        div {
-            img {
-               display: none;
-            }
+
+
+
+/* footer */
+    
+@media (max-width:1350px){
+    .footer-procenter {
+        .logo-final-padre{
+            width: 100px;
+            height:100px;
+            // .logo-final-hijo{
+                
+            // }
         }
-        .redes-sociales {
-            ul{
-                li{
-                    div{
-                        width: 20px;
-                        height: 20px;
-                        border-radius: 20px; 
-                    }
-                    a {
-                        font-size: 15px;
+        .nav-redes{
+            .ul-redes{
+                .li-redes{
+                    .div-redes{
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 40px;
                     }
                 }
             }
@@ -158,35 +160,29 @@
     }
 }
 
-@media (max-width: 1350px) {
-    footer {
-        .pestañas-footer {
-            display: none;
+@media (max-width: 750px) {
+    .footer-procenter {
+        display: flex;
+        justify-content: center;
+        .logo-final-padre{
+           display: none;
         }
-        div {
-            border-radius: 20px;
-            width: 80px;
-            height: 50px;
-            border-style: solid;
-            border-color: #85c1e9;
-            overflow: hidden;
-        }
-        .redes-sociales {
-            ul{
-                li{
-                    div{
-                        width: 20px;
-                        height: 20px;
-                        border-radius: 20px; 
-                    }
-                    a {
-                        font-size: 15px;
+        .nav-redes{       
+            .ul-redes{
+                .li-redes{  
+                    .div-redes{
+                        width: 30px;
+                        height: 30px;
+                        .img-redes{
+                            @extend %img-full;
+                        }
                     }
                 }
             }
         }
     }
 }
+
 
 
 

@@ -1,40 +1,51 @@
-footer {
+.footer-procenter {
     @include displays (flex, center, space-between);
     background-color: #85c1e9;
     margin-top: 70px;
     padding-left: 10px;
     padding-right: 10px;
-        div {
-            border-style: solid;
-            border-color: #85c1e9;
-            border-radius: 35px;
-            width: 110px;
-            height:120px;
-            overflow: hidden;
-            img {
-                @extend %img-full;
-            }
+    .logo-final-padre{
+        border-style: solid;
+        border-color: #85c1e9;
+        border-radius: 35px;
+        width: 110px;
+        height:120px;
+        overflow: hidden;
+        .logo-final-hijo{
+            @extend %img-full;
         }
-        .redes-sociales {
-            ul {
-                li{
-                    list-style: none;
-                    @include displays (flex, center, none);
-                    div{
-                        width: 40px;
-                        height: 40px;
-                        border-radius: 40px;
-                        border-style: solid;
-                        border-color: #85c1e9;
-                        overflow: hidden;
-                        margin-right: 10px;
-                        img {
-                            @extend %img-full;
-                        }
+    }
+    .nav-redes{
+        .ul-redes{
+            .li-redes{
+                list-style: none;   
+                @include displays (flex, center, none);
+                .div-redes{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 40px;
+                    border-style: solid;
+                    border-color: #85c1e9;
+                    overflow: hidden;
+                    margin-right: 10px;
+                    .img-redes{
+                        @extend %img-full;
                     }
                 }
+                // .link-redes {
+                //     
+                // }
             }
         }
+    }
+    .nav-pestanas{
+        .ul-pestanas{
+            .li-pestanas{
+                list-style: none;
+                // .link-pestanas {
+                    
+                // }
+            }
+        }
+    }
 }
-
-
