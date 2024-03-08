@@ -121,7 +121,13 @@ header section {
   display: flex;
   align-items: center;
 }
-header section p, header section .nombregimnasio {
+header section .nombregimnasio {
+  font-size: 40px;
+  color: black;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+header section p a {
   font-size: 40px;
   color: black;
   font-weight: bold;
