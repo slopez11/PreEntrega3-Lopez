@@ -29,6 +29,8 @@ h1 {
     font-family: 'Times New Roman', Times, serif;
 }
 
+
+
 .cuerpo-recorrido {
     align-items: center;
     text-align: center;
@@ -45,5 +47,12 @@ h1 {
 input:hover:focus {
     cursor: pointer;
     font-size: 20px;
+}
+
+.input-perfil {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
 }
 

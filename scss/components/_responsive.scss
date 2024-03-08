@@ -18,10 +18,18 @@
     }
 }
 
-@media (max-width: 432px) {
+@media (max-width: 510px) {
+    header section div img {
+        width: 50px ;
+        height: 25px;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
     header nav p {
         font-size: 7px;
     }
+
     header div {
         p {
             font-size: 7px;
@@ -126,7 +134,7 @@
 } 
 
 /* Responsive de footer*/
-@media (max-width: 432px) {
+@media (max-width: 510px) {
     footer {
      .pestañas-footer {
         display: none;

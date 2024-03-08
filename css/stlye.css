@@ -318,30 +318,47 @@ input:hover:focus {
   font-size: 20px;
 }
 
+.input-perfil {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
 .contenedor-div {
   display: flex;
   align-items: center;
   justify-content: center;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .Contenedor-de-rutinas {
-  width: 50%;
-  min-width: 200px;
+  min-width: 500px;
   height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.Rutina {
+.rutina {
   height: 25%;
-  width: 40%;
-  min-width: 200px;
-  border: solid 3px black;
+  width: 200px;
   margin: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.rutina button {
+  width: 100%;
+  height: 100%;
+  border: solid 3px black;
+  border-radius: 25px;
+  font-size: 20px;
+}
+.rutina button:hover {
+  font-size: 30px;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 h2 {
@@ -349,9 +366,9 @@ h2 {
 }
 
 .historial-de-rutinas {
-  width: 50%;
   height: 500px;
   min-width: 200px;
+  text-align: center;
 }
 
 .contenedor-historial {
@@ -359,6 +376,16 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.contenedor-historial .historial-rutina {
+  height: 25%;
+  width: 200px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 3px black;
+  border-radius: 25px;
 }
 
 /* Responsive de header */
@@ -372,7 +399,13 @@ h2 {
     display: none;
   }
 }
-@media (max-width: 432px) {
+@media (max-width: 510px) {
+  header section div img {
+    width: 50px;
+    height: 25px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
   header nav p {
     font-size: 7px;
   }
@@ -493,7 +526,7 @@ h2 {
   }
 }
 /* Responsive de footer*/
-@media (max-width: 432px) {
+@media (max-width: 510px) {
   footer .pestañas-footer {
     display: none;
   }
