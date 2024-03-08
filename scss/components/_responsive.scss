@@ -136,41 +136,59 @@
 /* Responsive de footer*/
 @media (max-width: 510px) {
     footer {
-     .pestañas-footer {
-        display: none;
-     }
-
-     div {
-        width: 35px;
-        height: 35px;
-        border-radius: 35px;
-        border-style: solid;
-        border-color: #85c1e9;
-        overflow: hidden;
-        margin-right: 10px;
-                        img {
-                            @extend %img-full;
-                        }
-     }
-     .redes-sociales {
-        
-        ul {
-            padding: 0px;
-            li {
-                div{
-                    display: none;
-                    img{
-                        display: none;
+        div {
+            img {
+               display: none;
+            }
+        }
+        .redes-sociales {
+            ul{
+                li{
+                    div{
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 20px; 
                     }
-                }
-                a {
-                    font-size: 10px;
+                    a {
+                        font-size: 15px;
+                    }
                 }
             }
         }
-     }
     }
 }
+
+@media (max-width: 1350px) {
+    footer {
+        .pestañas-footer {
+            display: none;
+        }
+        div {
+            border-radius: 20px;
+            width: 80px;
+            height: 50px;
+            border-style: solid;
+            border-color: #85c1e9;
+            overflow: hidden;
+        }
+        .redes-sociales {
+            ul{
+                li{
+                    div{
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 20px; 
+                    }
+                    a {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 
 /* Responsive de ejerciciopedia */
 @media (max-width: 1400px) {
