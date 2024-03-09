@@ -111,15 +111,6 @@ div .ejercicio {
   list-style: none;
 }
 
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  margin-bottom: 20px;
-  background-color: #85c1e9;
-  height: 70px;
-}
 header section {
   display: flex;
   align-items: center;
@@ -171,6 +162,15 @@ a {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.header-procenter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #85c1e9;
+  height: 70px;
+}
 .header-procenter .section-titulo .nombre-gim a {
   display: none;
 }

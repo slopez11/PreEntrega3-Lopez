@@ -1,10 +1,6 @@
 
 header {
-    @include displays (flex, center, space-between);
-    padding: 10px;
-    margin-bottom: 20px;
-    background-color: map-get($colores,color3);
-    height: 70px;
+    
     section  {
         display: flex;
         align-items: center;
@@ -64,6 +60,11 @@ a {
 
 
 .header-procenter {
+    @include displays (flex, center, space-between);
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: map-get($colores,color3);
+    height: 70px;
     .section-titulo {
         .nombre-gim {
             a {
