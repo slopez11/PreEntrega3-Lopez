@@ -1,4 +1,4 @@
-.img-perfilhijo, .pag-inicio .img-der .imagen-container img, .pag-inicio .img-izq .imagen-container img, header div .img-perf-usuario .img-perfilhijo, header section div img, .footer-procenter .nav-redes .ul-redes .li-redes .div-redes .img-redes, .footer-procenter .logo-final-padre .logo-final-hijo {
+.img-perfilhijo, .pag-inicio .img-der .imagen-container img, .pag-inicio .img-izq .imagen-container img, .header-procenter .div-ingreso .img-perfil-usuario .img-perfil-usuario-hijo, .header-procenter .seccion-titulo .div-imagen img, .footer-procenter .nav-redes .ul-redes .li-redes .div-redes .img-redes, .footer-procenter .logo-final-padre .logo-final-hijo {
   width: 100%;
   height: 100%;
 }
@@ -111,23 +111,26 @@ div .ejercicio {
   list-style: none;
 }
 
-header section {
+.header-procenter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #85c1e9;
+  height: 70px;
+}
+.header-procenter .seccion-titulo {
   display: flex;
   align-items: center;
 }
-header section .nombregimnasio {
+.header-procenter .seccion-titulo .nombre-gimnasio .link-index {
   font-size: 40px;
   color: black;
   font-weight: bold;
   font-family: "Times New Roman", Times, serif;
 }
-header section p a {
-  font-size: 40px;
-  color: black;
-  font-weight: bold;
-  font-family: "Times New Roman", Times, serif;
-}
-header section div {
+.header-procenter .seccion-titulo .div-imagen {
   border-style: solid;
   border-color: #85c1e9;
   border-radius: 20px;
@@ -135,20 +138,20 @@ header section div {
   height: 50px;
   overflow: hidden;
 }
-header nav {
+.header-procenter .nav-redesh {
   display: flex;
   align-items: none;
   justify-content: space-between;
   padding: 10px;
   width: 400px;
 }
-header div {
+.header-procenter .div-ingreso {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 150px;
 }
-header div .img-perf-usuario {
+.header-procenter .div-ingreso .img-perfil-usuario {
   border-style: solid;
   border-color: #85c1e9;
   border-radius: 30px;
@@ -160,31 +163,6 @@ a {
   text-decoration: none;
   color: black;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-.header-procenter {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  margin-bottom: 20px;
-  background-color: #85c1e9;
-  height: 70px;
-}
-.header-procenter .section-titulo .nombre-gim a {
-  display: none;
-}
-.header-procenter .section-titulo .logo-gim img {
-  display: none;
-}
-.header-procenter .nav-redesh .p-redesh .a-redesh {
-  display: none;
-}
-.header-procenter .div-ingreso .div-ingreso-padre .div-ingreso-hijo {
-  display: none;
-}
-.header-procenter .div-ingreso .div-perfil-usuario .img-perfil-usuario {
-  display: none;
 }
 
 div .horarios {

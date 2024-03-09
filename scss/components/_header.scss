@@ -1,24 +1,23 @@
 
-header {
-    
-    section  {
+.header-procenter {
+    @include displays (flex, center, space-between);
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: map-get($colores,color3);
+    height: 70px;
+    .seccion-titulo  {
         display: flex;
         align-items: center;
-        .nombregimnasio {
-            font-size: 40px;
-            color: map-get($colores,color2);
-            font-weight: bold;
-            font-family:'Times New Roman', Times, serif;
-        }
-        p {
-            a{
+        
+        .nombre-gimnasio {
+            .link-index {
                 font-size: 40px;
                 color: map-get($colores,color2);
                 font-weight: bold;
                 font-family:'Times New Roman', Times, serif; 
             }
         }
-        div {
+        .div-imagen {
             border-style: solid;
             border-color: map-get($colores,color3);
             border-radius: 20px;
@@ -30,22 +29,22 @@ header {
             }
         }
     }
-    nav {
+    .nav-redesh {
         @include displays (flex, none, space-between);
         padding: 10px;
         width: 400px;
     }
-    div {
+    .div-ingreso {
         @include displays (flex, center, space-between);
         width: 150px;
-        .img-perf-usuario {
+        .img-perfil-usuario {
             border-style: solid;
             border-color: map-get($colores,color3);
             border-radius: 30px ;
             width: 50px;
             height: 50px;
             overflow: hidden;
-            .img-perfilhijo {
+            .img-perfil-usuario-hijo {
                 @extend %img-full;
             }
         }
@@ -58,42 +57,3 @@ a {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-.header-procenter {
-    @include displays (flex, center, space-between);
-    padding: 10px;
-    margin-bottom: 20px;
-    background-color: map-get($colores,color3);
-    height: 70px;
-    .section-titulo {
-        .nombre-gim {
-            a {
-                display: none;
-            }
-        }
-        .logo-gim {
-            img {
-                display: none;           
-            }
-        }
-    }
-    .nav-redesh {
-        .p-redesh {
-            .a-redesh{
-                display: none;
-            }
-        }
-    }
-    .div-ingreso {
-        .div-ingreso-padre {
-            .div-ingreso-hijo {
-                display: none;
-            }
-        }
-        .div-perfil-usuario {
-            .img-perfil-usuario {
-                display: none;
-            }
-        }
-    }
-}
