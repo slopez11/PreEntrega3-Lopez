@@ -1,0 +1,723 @@
+.img-perfilhijo, .pag-inicio .img-der .imagen-container img, .pag-inicio .img-izq .imagen-container img, header div .img-perf-usuario .img-perfilhijo, header section div img, .footer-procenter .nav-redes .ul-redes .li-redes .div-redes .img-redes, .footer-procenter .logo-final-padre .logo-final-hijo {
+  width: 100%;
+  height: 100%;
+}
+
+/* creamos variables para guardar un valor que se reutiliza en varios lugares */
+/* puedo luego importar el archivo donde lo necesito, en la pagina que sea */
+div .ejercicio {
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-rows: 250px 250px 250px;
+  grid-template-areas: "video1 video2 video3 video4" "video5 video6 video7 video8" "video9 video10 video11 video12";
+  justify-content: center;
+  gap: 50px;
+  height: 60vh;
+}
+
+.contenedor-ejercicio1 {
+  grid-area: video1;
+  text-align: center;
+}
+
+.contenedor-ejercicio5 {
+  grid-area: video5;
+  text-align: center;
+}
+
+.contenedor-ejercicio9 {
+  grid-area: video9;
+  text-align: center;
+}
+
+.contenedor-ejercicio2 {
+  grid-area: video2;
+  text-align: center;
+}
+
+.contenedor-ejercicio6 {
+  grid-area: video6;
+  text-align: center;
+}
+
+.contenedor-ejercicio10 {
+  grid-area: video10;
+  text-align: center;
+}
+
+.contenedor-ejercicio3 {
+  grid-area: video3;
+  text-align: center;
+}
+
+.contenedor-ejercicio7 {
+  grid-area: video7;
+  text-align: center;
+}
+
+.contenedor-ejercicio11 {
+  grid-area: video11;
+  text-align: center;
+}
+
+.contenedor-ejercicio4 {
+  grid-area: video4;
+  text-align: center;
+}
+
+.contenedor-ejercicio8 {
+  grid-area: video8;
+  text-align: center;
+}
+
+.contenedor-ejercicio12 {
+  grid-area: video12;
+  text-align: center;
+}
+
+.footer-procenter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #85c1e9;
+  margin-top: 70px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.footer-procenter .logo-final-padre {
+  border-style: solid;
+  border-color: #85c1e9;
+  border-radius: 35px;
+  width: 110px;
+  height: 120px;
+  overflow: hidden;
+}
+.footer-procenter .nav-redes .ul-redes .li-redes {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: none;
+}
+.footer-procenter .nav-redes .ul-redes .li-redes .div-redes {
+  width: 30px;
+  height: 30px;
+  border-radius: 40px;
+  border-style: solid;
+  border-color: #85c1e9;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.footer-procenter .nav-pestanas .ul-pestanas .li-pestanas {
+  list-style: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #85c1e9;
+  height: 70px;
+}
+header section {
+  display: flex;
+  align-items: center;
+}
+header section .nombregimnasio {
+  font-size: 40px;
+  color: black;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+header section p a {
+  font-size: 40px;
+  color: black;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+header section div {
+  border-style: solid;
+  border-color: #85c1e9;
+  border-radius: 20px;
+  width: 80px;
+  height: 50px;
+  overflow: hidden;
+}
+header nav {
+  display: flex;
+  align-items: none;
+  justify-content: space-between;
+  padding: 10px;
+  width: 400px;
+}
+header div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
+}
+header div .img-perf-usuario {
+  border-style: solid;
+  border-color: #85c1e9;
+  border-radius: 30px;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-procenter .section-titulo .nombre-gim a {
+  display: none;
+}
+.header-procenter .section-titulo .logo-gim img {
+  display: none;
+}
+.header-procenter .nav-redesh .p-redesh .a-redesh {
+  display: none;
+}
+.header-procenter .div-ingreso .div-ingreso-padre .div-ingreso-hijo {
+  display: none;
+}
+.header-procenter .div-ingreso .div-perfil-usuario .img-perfil-usuario {
+  display: none;
+}
+
+div .horarios {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  flex-direction: column;
+}
+div .horarios .horarios-texto {
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.pag-inicio {
+  display: flex;
+  align-items: none;
+  justify-content: space-around;
+}
+.pag-inicio .img-izq {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.pag-inicio .img-izq .imagen-container {
+  min-width: 200px;
+  min-height: 200px;
+  height: 300px;
+  width: 300px;
+}
+.pag-inicio .planes {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 100px;
+}
+.pag-inicio .planes .planes1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.pag-inicio .planes .planes1 .plan-musc button {
+  border: 2px solid gray;
+  border-radius: 15px;
+  text-align: center;
+  height: 100px;
+  width: 200px;
+  font-size: 18px;
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
+}
+.pag-inicio .planes .planes1 .plan-musc button:hover {
+  background-color: #85c1e9;
+  cursor: pointer;
+}
+.pag-inicio .planes .planes1 .plan-squash button {
+  border: 2px solid black;
+  border-radius: 15px;
+  text-align: center;
+  height: 100px;
+  width: 200px;
+  font-size: 18px;
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
+}
+.pag-inicio .planes .planes1 .plan-squash button:hover {
+  background-color: #85c1e9;
+  cursor: pointer;
+}
+.pag-inicio .planes .planes2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.pag-inicio .planes .planes2 .plan-boxeo button {
+  border: 2px solid rgb(199, 44, 44);
+  border-radius: 15px;
+  text-align: center;
+  height: 100px;
+  width: 200px;
+  font-size: 18px;
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
+}
+.pag-inicio .planes .planes2 .plan-boxeo button:hover {
+  background-color: #85c1e9;
+  cursor: pointer;
+}
+.pag-inicio .planes .planes2 .plan-muaythai button {
+  border: 2px solid gold;
+  border-radius: 15px;
+  text-align: center;
+  height: 100px;
+  width: 200px;
+  font-size: 18px;
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
+}
+.pag-inicio .planes .planes2 .plan-muaythai button:hover {
+  background-color: #85c1e9;
+  cursor: pointer;
+}
+.pag-inicio .img-der {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.pag-inicio .img-der .imagen-container {
+  min-width: 200px;
+  min-height: 200px;
+  height: 300px;
+  width: 300px;
+}
+.miperfil {
+  display: flex;
+  align-items: center;
+  justify-content: none;
+}
+
+.img-miniperfil {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 30px;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  margin-left: 10px;
+}
+
+h1 {
+  margin-left: 30px;
+  text-decoration: underline;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.encabezado-recorrido {
+  margin-left: 60px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.cuerpo-recorrido {
+  align-items: center;
+  text-align: center;
+}
+
+.esp-filas {
+  padding: 10px;
+}
+
+.esp-col {
+  padding: 10px;
+}
+
+input:hover:focus {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.input-perfil {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contenedor-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Contenedor-de-rutinas {
+  min-width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rutina {
+  height: 25%;
+  width: 200px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rutina button {
+  width: 100%;
+  height: 100%;
+  border: solid 3px black;
+  border-radius: 25px;
+  font-size: 20px;
+}
+.rutina button:hover {
+  font-size: 30px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+h2 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.historial-de-rutinas {
+  height: 500px;
+  min-width: 200px;
+  text-align: center;
+}
+
+.contenedor-historial {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contenedor-historial .historial-rutina {
+  height: 25%;
+  width: 200px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 3px black;
+  border-radius: 25px;
+}
+
+/* Responsive de header */
+@media (max-width: 1350px) {
+  header section p {
+    display: none;
+  }
+}
+@media (max-width: 1350px) {
+  .pag-inicio .img-izq .imagen-container, .pag-inicio .img-der .imagen-container {
+    display: none;
+  }
+}
+@media (max-width: 510px) {
+  header section div img {
+    width: 50px;
+    height: 25px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  header nav p {
+    font-size: 7px;
+  }
+  header div p {
+    font-size: 7px;
+  }
+  header div .img-perf-usuario {
+    border-style: solid;
+    border-color: #85c1e9;
+    border-radius: 15px;
+    width: 25px;
+    height: 25px;
+    overflow: hidden;
+  }
+  header div .img-perf-usuario img {
+    width: 100%;
+    height: 100%;
+  }
+}
+/* Responsive de index */
+@media (max-width: 432px) {
+  .planes1 .plan-musc button {
+    border: 2px solid black;
+    border-radius: 15px;
+    text-align: center;
+    height: 75px;
+    width: 150px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 1350px) {
+  .pag-inicio .planes .planes1 .plan-musc button {
+    border: 2px solid gray;
+    border-radius: 15px;
+    text-align: center;
+    height: 60px;
+    width: 100px;
+    font-size: 10px;
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+    animation: heartbeat 1.5s ease-in-out infinite both;
+  }
+  .pag-inicio .planes .planes1 .plan-squash button {
+    border: 2px solid black;
+    border-radius: 15px;
+    text-align: center;
+    height: 60px;
+    width: 100px;
+    font-size: 10px;
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+    animation: heartbeat 1.5s ease-in-out infinite both;
+  }
+  .pag-inicio .planes .planes2 .plan-boxeo button {
+    border: 2px solid rgb(199, 44, 44);
+    border-radius: 15px;
+    text-align: center;
+    height: 60px;
+    width: 100px;
+    font-size: 10px;
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+    animation: heartbeat 1.5s ease-in-out infinite both;
+  }
+  .pag-inicio .planes .planes2 .plan-muaythai button {
+    border: 2px solid gold;
+    border-radius: 15px;
+    text-align: center;
+    height: 60px;
+    width: 100px;
+    font-size: 10px;
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+    animation: heartbeat 1.5s ease-in-out infinite both;
+  }
+}
+@media (max-width: 432px) {
+  .pag-inicio .planes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .pag-inicio .planes .planes1 .plan-musc button {
+    border: 2px solid gray;
+    border-radius: 15px;
+    text-align: center;
+    height: 40px;
+    width: 80px;
+    font-size: 7px;
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+    animation: heartbeat 1.5s ease-in-out infinite both;
+  }
+  .pag-inicio .planes .planes1 .plan-squash button {
+    border: 2px solid black;
+    border-radius: 15px;
+    text-align: center;
+    height: 40px;
+    width: 80px;
+    font-size: 7px;
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+    animation: heartbeat 1.5s ease-in-out infinite both;
+  }
+  .pag-inicio .planes .planes2 .plan-boxeo button {
+    border: 2px solid rgb(199, 44, 44);
+    border-radius: 15px;
+    text-align: center;
+    height: 40px;
+    width: 80px;
+    font-size: 7px;
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+    animation: heartbeat 1.5s ease-in-out infinite both;
+  }
+  .pag-inicio .planes .planes2 .plan-muaythai button {
+    border: 2px solid gold;
+    border-radius: 15px;
+    text-align: center;
+    height: 40px;
+    width: 80px;
+    font-size: 7px;
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+    animation: heartbeat 1.5s ease-in-out infinite both;
+  }
+}
+/* footer */
+@media (max-width: 1350px) {
+  .footer-procenter .logo-final-padre {
+    width: 100px;
+    height: 100px;
+  }
+  .footer-procenter .nav-redes .ul-redes .li-redes .div-redes {
+    width: 30px;
+    height: 30px;
+    border-radius: 40px;
+  }
+}
+@media (max-width: 750px) {
+  .footer-procenter {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-procenter .logo-final-padre {
+    display: none;
+  }
+  .footer-procenter .nav-redes .ul-redes .li-redes .div-redes {
+    width: 30px;
+    height: 30px;
+  }
+}
+/* Responsive de ejerciciopedia */
+@media (max-width: 1400px) {
+  div .ejercicio {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 250px 250px 250px 250px 250px 250px;
+    grid-template-areas: "video1 video2" "video5 video6" "video9 video10" "video3 video4" "video7 video8" "video11 video12";
+    justify-content: center;
+    gap: 130px;
+    height: 85vh;
+  }
+}
+@media (max-width: 800px) {
+  div .ejercicio {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 250px 250px 250px 250px 250px 250px 250px 250px 250px 250px 250px 250px;
+    grid-template-areas: "video1" "video2" "video3" "video4" "video5" "video6" "video7" "video8" "video9" "video10" "video11" "video12";
+    justify-content: center;
+    gap: 150px;
+    height: 180vh;
+  }
+}
+/* Responsive de horarios */
+@media (max-width: 1350px) {
+  div .horarios div img {
+    display: none;
+  }
+  div .horarios div .tablets-y-menos {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  div .horarios .horarios-texto {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+@media screen and (min-width: 1350px) {
+  div .horarios div .tablets-y-menos {
+    display: none;
+  }
+  div .horarios .horarios-texto {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+/* Responsive de rutinas */
+@media (max-width: 900px) {
+  .rutinas .contenedor-div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2024-2-27 22:32:51
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+/**
+ * ----------------------------------------
+ * animation heartbeat
+ * ----------------------------------------
+ */
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+/* Responsive */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #ECF0F1;
+  margin: 0px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -63,3 +63,36 @@ a {
 }
 
 
+.header-procenter {
+    .section-titulo {
+        .nombre-gim {
+            a {
+                display: none;
+            }
+        }
+        .logo-gim {
+            img {
+                display: none;           
+            }
+        }
+    }
+    .nav-redesh {
+        .p-redesh {
+            .a-redesh{
+                display: none;
+            }
+        }
+    }
+    .div-ingreso {
+        .div-ingreso-padre {
+            .div-ingreso-hijo {
+                display: none;
+            }
+        }
+        .div-perfil-usuario {
+            .img-perfil-usuario {
+                display: none;
+            }
+        }
+    }
+}
