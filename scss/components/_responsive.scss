@@ -1,7 +1,7 @@
 /* Responsive de header */
 
 @media (max-width: 1350px) {
-    header section p {
+    .header-procenter .seccion-titulo .nombre-gimnasio {
         display: none;
     }   
   }
@@ -13,35 +13,41 @@
             .imagen-container {
                 display: none;
             }
-            
         }
     }
 }
 
-@media (max-width: 510px) {
-    header section div img {
-        width: 50px ;
-        height: 25px;
-        overflow: hidden;
-        border-radius: 10px;
-    }
-
-    header nav p {
-        font-size: 7px;
-    }
-
-    header div {
-        p {
-            font-size: 7px;
+@media (max-width: 540px) {
+    .header-procenter .seccion-titulo .div-imagen {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 50px ;
+            height: 25px;
+            overflow: hidden;
+            border-radius: 10px;
         }
-        .img-perf-usuario {
+    }
+    
+    .header-procenter .nav-redesh p {
+        font-size: 9px;
+    }
+
+    .header-procenter .div-ingreso {
+        justify-content: right;
+        p {
+            font-size: 9px;
+            
+        }
+        .img-perfil-usuario {
             border-style: solid;
             border-color: map-get($colores,color3);
             border-radius: 15px ;
             width: 25px;
             height: 25px;
             overflow: hidden;
-            img {
+            .img-perfil-usuario {
                 width: 100%;
                 height: 100%;
             }
@@ -142,9 +148,6 @@
         .logo-final-padre{
             width: 100px;
             height:100px;
-            // .logo-final-hijo{
-                
-            // }
         }
         .nav-redes{
             .ul-redes{
@@ -167,18 +170,22 @@
         .logo-final-padre{
            display: none;
         }
-        .nav-redes{       
+        .nav-redes{   
+            font-size: px;    
             .ul-redes{
                 .li-redes{  
                     .div-redes{
-                        width: 30px;
-                        height: 30px;
+                        width: 15px;
+                        height: 15px;
                         .img-redes{
                             @extend %img-full;
                         }
                     }
                 }
             }
+        }
+        .nav-pestanas {
+            display: none;          
         }
     }
 }

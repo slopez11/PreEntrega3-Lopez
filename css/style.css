@@ -393,7 +393,7 @@ h2 {
 
 /* Responsive de header */
 @media (max-width: 1350px) {
-  header section p {
+  .header-procenter .seccion-titulo .nombre-gimnasio {
     display: none;
   }
 }
@@ -402,20 +402,28 @@ h2 {
     display: none;
   }
 }
-@media (max-width: 510px) {
-  header section div img {
+@media (max-width: 540px) {
+  .header-procenter .seccion-titulo .div-imagen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-procenter .seccion-titulo .div-imagen img {
     width: 50px;
     height: 25px;
     overflow: hidden;
     border-radius: 10px;
   }
-  header nav p {
-    font-size: 7px;
+  .header-procenter .nav-redesh p {
+    font-size: 9px;
   }
-  header div p {
-    font-size: 7px;
+  .header-procenter .div-ingreso {
+    justify-content: right;
   }
-  header div .img-perf-usuario {
+  .header-procenter .div-ingreso p {
+    font-size: 9px;
+  }
+  .header-procenter .div-ingreso .img-perfil-usuario {
     border-style: solid;
     border-color: #85c1e9;
     border-radius: 15px;
@@ -423,7 +431,7 @@ h2 {
     height: 25px;
     overflow: hidden;
   }
-  header div .img-perf-usuario img {
+  .header-procenter .div-ingreso .img-perfil-usuario .img-perfil-usuario {
     width: 100%;
     height: 100%;
   }
@@ -548,9 +556,15 @@ h2 {
   .footer-procenter .logo-final-padre {
     display: none;
   }
+  .footer-procenter .nav-redes {
+    font-size: px;
+  }
   .footer-procenter .nav-redes .ul-redes .li-redes .div-redes {
-    width: 30px;
-    height: 30px;
+    width: 15px;
+    height: 15px;
+  }
+  .footer-procenter .nav-pestanas {
+    display: none;
   }
 }
 /* Responsive de ejerciciopedia */
