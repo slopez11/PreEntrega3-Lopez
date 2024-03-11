@@ -596,8 +596,6 @@ h2 {
   div .horarios {
     height: 900px;
     justify-content: center;
-    text-align: center;
-    padding-top: 25px;
   }
   div .horarios div img {
     display: none;
@@ -609,6 +607,8 @@ h2 {
   div .horarios .horarios-texto {
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 25px;
   }
 }
 @media screen and (min-width: 1350px) {
