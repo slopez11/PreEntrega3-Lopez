@@ -211,8 +211,8 @@ div .horarios .horarios-texto {
   height: 100px;
   width: 200px;
   font-size: 18px;
-  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
-  animation: heartbeat 1.5s ease-in-out infinite both;
+  -webkit-animation: heartbeat 3s ease-in-out infinite both;
+  animation: heartbeat 3s ease-in-out infinite both;
 }
 .pag-inicio .planes .planes1 .plan-musc button:hover {
   background-color: #85c1e9;
@@ -225,8 +225,8 @@ div .horarios .horarios-texto {
   height: 100px;
   width: 200px;
   font-size: 18px;
-  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
-  animation: heartbeat 1.5s ease-in-out infinite both;
+  -webkit-animation: heartbeat 3s ease-in-out infinite both;
+  animation: heartbeat 3s ease-in-out infinite both;
 }
 .pag-inicio .planes .planes1 .plan-squash button:hover {
   background-color: #85c1e9;
@@ -244,8 +244,8 @@ div .horarios .horarios-texto {
   height: 100px;
   width: 200px;
   font-size: 18px;
-  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
-  animation: heartbeat 1.5s ease-in-out infinite both;
+  -webkit-animation: heartbeat 3s ease-in-out infinite both;
+  animation: heartbeat 3s ease-in-out infinite both;
 }
 .pag-inicio .planes .planes2 .plan-boxeo button:hover {
   background-color: #85c1e9;
@@ -258,8 +258,8 @@ div .horarios .horarios-texto {
   height: 100px;
   width: 200px;
   font-size: 18px;
-  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
-  animation: heartbeat 1.5s ease-in-out infinite both;
+  -webkit-animation: heartbeat 3s ease-in-out infinite both;
+  animation: heartbeat 3s ease-in-out infinite both;
 }
 .pag-inicio .planes .planes2 .plan-muaythai button:hover {
   background-color: #85c1e9;
@@ -455,8 +455,8 @@ h2 {
     height: 60px;
     width: 100px;
     font-size: 10px;
-    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
-    animation: heartbeat 1.5s ease-in-out infinite both;
+    -webkit-animation: heartbeat 3s ease-in-out infinite both;
+    animation: heartbeat 3s ease-in-out infinite both;
   }
   .pag-inicio .planes .planes1 .plan-squash button {
     border: 2px solid black;
@@ -465,8 +465,8 @@ h2 {
     height: 60px;
     width: 100px;
     font-size: 10px;
-    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
-    animation: heartbeat 1.5s ease-in-out infinite both;
+    -webkit-animation: heartbeat 3s ease-in-out infinite both;
+    animation: heartbeat 3s ease-in-out infinite both;
   }
   .pag-inicio .planes .planes2 .plan-boxeo button {
     border: 2px solid rgb(199, 44, 44);
@@ -475,8 +475,8 @@ h2 {
     height: 60px;
     width: 100px;
     font-size: 10px;
-    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
-    animation: heartbeat 1.5s ease-in-out infinite both;
+    -webkit-animation: heartbeat 3s ease-in-out infinite both;
+    animation: heartbeat 3s ease-in-out infinite both;
   }
   .pag-inicio .planes .planes2 .plan-muaythai button {
     border: 2px solid gold;
@@ -485,8 +485,8 @@ h2 {
     height: 60px;
     width: 100px;
     font-size: 10px;
-    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
-    animation: heartbeat 1.5s ease-in-out infinite both;
+    -webkit-animation: heartbeat 3s ease-in-out infinite both;
+    animation: heartbeat 3s ease-in-out infinite both;
   }
 }
 @media (max-width: 432px) {
@@ -502,8 +502,8 @@ h2 {
     height: 40px;
     width: 80px;
     font-size: 7px;
-    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
-    animation: heartbeat 1.5s ease-in-out infinite both;
+    -webkit-animation: heartbeat 3s ease-in-out infinite both;
+    animation: heartbeat 3s ease-in-out infinite both;
   }
   .pag-inicio .planes .planes1 .plan-squash button {
     border: 2px solid black;
@@ -512,8 +512,8 @@ h2 {
     height: 40px;
     width: 80px;
     font-size: 7px;
-    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
-    animation: heartbeat 1.5s ease-in-out infinite both;
+    -webkit-animation: heartbeat 3s ease-in-out infinite both;
+    animation: heartbeat 3s ease-in-out infinite both;
   }
   .pag-inicio .planes .planes2 .plan-boxeo button {
     border: 2px solid rgb(199, 44, 44);
@@ -522,8 +522,8 @@ h2 {
     height: 40px;
     width: 80px;
     font-size: 7px;
-    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
-    animation: heartbeat 1.5s ease-in-out infinite both;
+    -webkit-animation: heartbeat 3s ease-in-out infinite both;
+    animation: heartbeat 3s ease-in-out infinite both;
   }
   .pag-inicio .planes .planes2 .plan-muaythai button {
     border: 2px solid gold;
@@ -532,8 +532,8 @@ h2 {
     height: 40px;
     width: 80px;
     font-size: 7px;
-    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
-    animation: heartbeat 1.5s ease-in-out infinite both;
+    -webkit-animation: heartbeat 3s ease-in-out infinite both;
+    animation: heartbeat 3s ease-in-out infinite both;
   }
 }
 /* footer */

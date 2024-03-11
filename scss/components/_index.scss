@@ -1,25 +1,3 @@
-
-// section {
-//     @extend %flex-center-around;
-//     div {
-//         height: 300px;
-//         width: 320px;
-//         text-align: center;
-
-//         .imagen-container {
-//             height: 250px;
-//             width: 300px;
-//             margin: 10px;
-//             img{
-//                 width: 100%;
-//                 height: 100%;
-//             }
-//         }
-//     }
-// }
-
-
-
 .pag-inicio {
     @include displays (flex, none, space-around);
     .img-izq {
