@@ -593,15 +593,18 @@ h2 {
 }
 /* Responsive de horarios */
 @media (max-width: 1350px) {
+  div .horarios {
+    height: 900px;
+    justify-content: center;
+    text-align: center;
+    padding-top: 25px;
+  }
   div .horarios div img {
     display: none;
   }
-  div .horarios div .tablets-y-menos {
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
+  div .horarios div .tablets-y-menos .horarios-por-dia {
     display: flex;
-    text-align: center;
-    justify-content: center;
+    padding-top: 25px;
   }
   div .horarios .horarios-texto {
     font-size: 15px;

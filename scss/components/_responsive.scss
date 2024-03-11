@@ -246,16 +246,17 @@
 @media (max-width: 1350px) {
     div{
         .horarios{
+            height: 900px;
+            justify-content: center;
                 div {
                     img {
                         display: none;
                     }
                     .tablets-y-menos {
-                        font-size: 15px;
-                        font-family: Arial, Helvetica, sans-serif;
-                        display: flex;
-                        text-align: center;
-                        justify-content: center;
+                        .horarios-por-dia {
+                            display: flex;
+                            padding-top: 25px;
+                        }
                         
                     }
                 }
@@ -265,6 +266,8 @@
                 font-size: 15px;
                 font-family: Arial, Helvetica, sans-serif;
                 }
+                text-align: center;
+                padding-top: 25px;
             }
         }
     }
