@@ -171,14 +171,14 @@
            display: none;
         }
         .nav-redes{   
-            font-size: px;    
             .ul-redes{
                 .li-redes{  
                     .div-redes{
-                        width: 15px;
-                        height: 15px;
+                        width: 30px;
+                        height: 30px;
                         .img-redes{
-                            @extend %img-full;
+                            width: 100%;
+                            height: 100%;
                         }
                     }
                 }
