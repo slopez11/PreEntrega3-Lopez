@@ -292,7 +292,7 @@ div .horarios .horarios-texto {
   margin-left: 10px;
 }
 
-h1 {
+.titulo-h1 {
   margin-left: 30px;
   text-decoration: underline;
   font-family: "Times New Roman", Times, serif;
@@ -576,8 +576,8 @@ h2 {
     grid-template-rows: 250px 250px 250px 250px 250px 250px;
     grid-template-areas: "video1 video2" "video5 video6" "video9 video10" "video3 video4" "video7 video8" "video11 video12";
     justify-content: center;
-    gap: 130px;
-    height: 85vh;
+    gap: 170px;
+    height: 170vh;
   }
 }
 @media (max-width: 800px) {
@@ -588,7 +588,7 @@ h2 {
     grid-template-areas: "video1" "video2" "video3" "video4" "video5" "video6" "video7" "video8" "video9" "video10" "video11" "video12";
     justify-content: center;
     gap: 150px;
-    height: 180vh;
+    height: 300vh;
   }
 }
 /* Responsive de horarios */
