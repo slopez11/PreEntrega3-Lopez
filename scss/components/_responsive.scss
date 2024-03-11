@@ -209,7 +209,7 @@
             'video11 video12';
             justify-content: center;
             gap: 170px;
-            height: 170vh;
+            height: 100vh;
         }
     }
 }
@@ -235,7 +235,7 @@
             'video12';
             justify-content: center;
             gap: 150px;
-            height: 300vh;
+            height: 150vh;
         }
     }
 }
@@ -298,5 +298,11 @@
             flex-direction: column;
         }
      }
-}  
+} 
+
+@media (max-width: 432px) {
+    .contenedor-de-rutinas .historial-de-rutinas{
+        width: 250px;
+    }
+}
  

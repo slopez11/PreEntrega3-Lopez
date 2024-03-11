@@ -336,7 +336,6 @@ input:hover:focus {
 }
 
 .Contenedor-de-rutinas {
-  min-width: 500px;
   height: 500px;
   display: flex;
   flex-direction: column;
@@ -577,7 +576,7 @@ h2 {
     grid-template-areas: "video1 video2" "video5 video6" "video9 video10" "video3 video4" "video7 video8" "video11 video12";
     justify-content: center;
     gap: 170px;
-    height: 170vh;
+    height: 100vh;
   }
 }
 @media (max-width: 800px) {
@@ -588,7 +587,7 @@ h2 {
     grid-template-areas: "video1" "video2" "video3" "video4" "video5" "video6" "video7" "video8" "video9" "video10" "video11" "video12";
     justify-content: center;
     gap: 150px;
-    height: 300vh;
+    height: 150vh;
   }
 }
 /* Responsive de horarios */
@@ -625,6 +624,11 @@ h2 {
   .rutinas .contenedor-div {
     display: flex;
     flex-direction: column;
+  }
+}
+@media (max-width: 432px) {
+  .contenedor-de-rutinas .historial-de-rutinas {
+    width: 250px;
   }
 }
 /* ----------------------------------------------
