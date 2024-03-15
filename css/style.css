@@ -83,6 +83,7 @@ div .ejercicio {
   margin-top: 70px;
   padding-left: 10px;
   padding-right: 10px;
+  bottom: 0;
 }
 .footer-procenter .logo-final-padre {
   border-style: solid;
@@ -537,9 +538,6 @@ h2 {
 }
 /* footer */
 @media (max-width: 1350px) {
-  .footer-procenter {
-    bottom: 0;
-  }
   .footer-procenter .logo-final-padre {
     width: 100px;
     height: 100px;
